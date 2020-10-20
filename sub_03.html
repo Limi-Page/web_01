@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HAPPY POINT</title>
+    <!--  style  -->
+    <link rel="stylesheet" href="./css/sub_03.css">
+    <!--  font  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
+
+<body>
+    <!--  상단  -->
+    <header id="header" class="clearfix">
+        <h1>
+            <a href="./index.html">
+                <img src="./images/wide_logo.png" alt="로고">
+            </a>
+        </h1>
+        <div class="mini_menu">
+            <ul class="min_m">
+                <li><a href="#" onclick="login_test()">LOGIN</a></li>
+                <li><a href="#" onclick="ready_test()">회원가입</a></li>
+                <li><a href="#" onclick="ready_test()">멤버십라운지</a></li>
+                <li><a href="#" onclick="ready_test()">매장찾기</a></li>
+                <li><a href="#" onclick="ready_test()">고객센터</a></li>
+            </ul>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="./sub_01.html">소개</a>
+                    <ul class="submenu">
+                        <li><a href="#">브랜드 소개</a></li>
+                        <li><a href="#">Member Ship</a></li>
+                        <li><a href="#">해피포인트 APP</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub_02.html">제휴</a>
+                    <ul class="submenu">
+                        <li><a href="#">제휴사 혜택</a></li>
+                        <li><a href="#">제휴카드</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub_03.html">이벤트/쿠폰</a>
+                    <ul class="submenu">
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">당첨자발표</a></li>
+                        <li><a href="#">쿠폰</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub_04.html">나눔</a>
+                    <ul class="submenu">
+                        <li><a href="#">해피기부</a></li>
+                        <li><a href="#">해피봉사단</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">나의정보</a></li>
+            </ul>
+            <button><a href="#"><i class="fas fa-bars"></i></a></button>
+        </nav>
+
+    </header>
+
+    <!--  content  -->
+    <section class="contents">
+        <div class="event_coupon">
+            <div class="ec_wrap">
+                <div class="ec_header">
+                    <h1>이벤트/쿠폰</h1>
+                    <p>해피포인트의 다양한 이벤트와 쿠폰 혜택을 누리세요.</p>
+                </div>
+                <div class="ec_nav">
+                    <ul>
+                        <li class="on" data-tab=tab_1><a href="#">진행이벤트</a></li>
+                        <li data-tab=tab_2><a href="#">종료이벤트</a></li>
+                        <li data-tab=tab_3><a href="#">당첨자발표</a></li>
+                        <li data-tab=tab_4><a href="#">쿠폰</a></li>
+                    </ul>
+                </div>
+                <main>
+                    <div id="tab_1" class="ing_ev tabs on">
+                        <h2>진행중인 이벤트</h2>
+                        <div class="grid">
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/ie_01.png" alt="배경이미지">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/ie_02.png" alt="배경이미지">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/ie_03.png" alt="배경이미지">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/ie_04.png" alt="배경이미지">
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/ie_05.png" alt="배경이미지">
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab_2" class="end_ev tabs">
+                        <h2>종료된 이벤트</h2>
+                        <div class="grid">
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_01.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_02.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_03.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_04.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_05.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_06.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_07.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_08.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                            <div class="grid_col">
+                                <a href="#">
+                                    <figure>
+                                        <img src="./images/sub_03/e_09.png" alt="배경이미지">
+                                        <div class="darkness"></div>
+                                        <div class="btn-plus"></div>
+                                    </figure>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab_3" class="announce tabs">
+                        <div class="innerBox">
+                            <h2>당첨자 발표</h2>
+                            <div class="news_list">
+                                <ul>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#"> &#60;유미의 세포들 특별전 &#62; 당첨자 발표 NEW</a></h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#">	영화 &#60;담보&#62; 예매권 이벤트 당첨자 발표</a></h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#">	영화&#60;그린랜드&#62;당첨자 발표</a></h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#">영화 예매권 이벤트! &#60;뮬란&#62; 당첨자 발표</a></h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#">해피포인트 회원 초대! My Dear 피노키오전 당첨자발표</a></h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#">영화 예매권 이벤트 &#60;오! 문희&#62; 당첨자 발표</a></h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#">창작 오페라 &#60;레드슈즈&#62; 초대이벤트 취소 안내</a></h3>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="date">2020.10.05</p>
+                                        <div class="title_wrap">
+                                            <h3 class="news_title"><a href="#">에그슬럿 해피스토리 댓글 이벤트 당첨자 발표!</a></h3>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab_4" class="coupon tabs">
+                        <div class="innerBox">
+                            <h2>해피앱 모바일 쿠폰 안내</h2>
+                            <div class="grid">
+                                <ul>
+                                    <li class="grid_coupon cou_1">
+                                        <img src="./images/sub_03/cou_01.jpg" alt="생일쿠폰1">
+                                        <div class="cou_text">
+                                            <img src="./images/sub_03/mini_paris.gif" alt="파리바게트로고">
+                                            <span>12,000원 이상 구매시 2천원 OFF 쿠폰</span>
+                                           <i class="info"></i> <p>6개월 내 파리바게뜨 매장에서<br>적립 또는 사용 2회 이상 이용 고객</p>
+                                        </div>
+                                    </li>
+                                    <li class="grid_coupon cou_2">
+                                        <img src="./images/sub_03/cou_02.jpg" alt="생일쿠폰2">
+                                        <div class="cou_text">
+                                            <img src="./images/sub_03/mini_dunkin.png" alt="던킨로고">
+                                            <span>커피 3,000원 OFF + 도넛 1개 증정쿠폰</span>
+                                            <i class="info"></i><p>1년 내 던킨도너츠 매장에서적립 또는 사용<br>  20회 이상이용 고객 *도넛 (1,400원 이하)</p>
+                                        </div>
+                                    </li>
+                                    <li class="grid_coupon cou_3">
+                                        <img src="./images/sub_03/cou_03.jpg" alt="생일쿠폰3">
+                                        <div class="cou_text">
+                                            <img src="./images/sub_03/mini_pascucci.gif" alt="파스구찌로고">
+                                            <span>커피/음료 구매시 커피류 <br>레귤러 사이즈 1잔 증정 쿠폰</span>
+                                            <i class="info"></i><p>1년 내 파스쿠찌 매장에서<br> 적립 또는 사용 10회 이상 이용 고객</p>
+                                        </div>
+                                    </li>
+                                    <li class="grid_coupon cou_4">
+                                        <img src="./images/sub_03/cou_04.jpg" alt="생일쿠폰">
+                                        <div class="cou_text">
+                                            <img src="./images/sub_03/mini_baskin.gif" alt="베스킨로고">
+                                            <span>싱글레귤러 1+1쿠폰</span>
+                                           <i class="info"></i><p>6개월 내 배스킨라빈스 매장에서<br> 적립 또는 사용 2회 이상 이용 고객</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="cou_box">
+                                <p class="cou_type">
+                                    해피포인트 회원에게는 <em>파리바게뜨, 배스킨라빈스, 던킨도너츠, 파스쿠찌</em>에서 생일 쿠폰을 증정합니다!<br>
+                                    생일쿠폰은 해피포인트 APP &gt; 마이페이지 &gt; MY쿠폰에서 확인 할 수 있습니다.<br>
+                                    해피포인트 APP을 다운로드 하세요!
+                                    <a role="button" href="https://itunes.apple.com/kr/app/haepipointeukadeu/id376313183?mt=8" target="_blank" class="button button_text button_ios"><span>App Store</span></a>
+                                    <a role="button" href="https://play.google.com/store/apps/details?id=com.hpapp&amp;hl=ko" target="_blank" class="button button_text button_android"><span>Google Play</span></a>
+                                    <br>
+                                    * 대상 고객은 생일 2달 전 말일 실적 기준으로 선정합니다.
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <!--  하단  -->
+    <footer id="footer" class="clearfix">
+        <div class="wrap">
+            <ul class="copy">
+                <li>주식회사 에스피씨클라우드</li>
+                <li>사업자 등록번호: 264-81-21971</li>
+                <li>서울특별시 서초구 남부순환로 2620 (양재동 11-149) 에스피씨클라우드</li>
+                <li>COPYRIGHT ⓒ SPC CLOUD. LTD ALL RIGHTS RESERVED.</li>
+            </ul>
+            <ul class="copy_1">
+                <li>해피포인트 고객센터: 080-320-1234 </li>
+                <li>평일(월~금) 오전9시~오후7 </li>
+                <li>토,일,공휴일 휴무</li>
+            </ul>
+            <div class="f_site">
+                <form action="">
+                    <select name="" id="">
+                        <option value="00">패밀리사이트</option>
+                        <option value="http://www.spc.co.kr/">SPC</option>
+                        <option value="http://www.pariscroissant.co.kr/">파리크라상</option>
+                        <option value="http://www.paris.co.kr/main/">파리바게뜨</option>
+                        <option value="http://www.caffe-pascucci.co.kr/">파스쿠찌</option>
+                        <option value="http://www.jambajuice.co.kr/web/main.asp">잠바주스</option>
+                        <option value="https://www.dqueenscatering.com/">디퀸즈케이터링</option>
+                        <option value="http://www.baskinrobbins.co.kr/">배스킨라빈스</option>
+                        <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
+                        <option value="http://www.bizeun.co.kr/">빚은</option>
+                        <option value="http://dining.spc.co.kr/index.do">SPC 외식브랜드</option>
+                        <option value="http://www.breadmall.co.kr/">브래드몰</option>
+                    </select>
+                    <img src="./images/f_logo.png" alt="하단로고">
+                </form>
+            </div>
+            <div class="f_menu">
+                <a href="#">개인정보 처리방침</a>
+                <a href="#">회원이용약관</a>
+                <a href="#">위치기반서비스</a>
+                <a href="#">거래희망회사 </a>
+                <a href="#">사전등록윤리신고센터</a>
+                <a href="#">이메일 무단수집거부</a>
+            </div>
+        </div>
+    </footer>
+    <!--  script  -->
+    <script src="./script/jquery-1.12.4.js"></script>
+    <!--  font-Awesome  -->
+    <script src="./script/all.js"></script>
+    <!--  header menu  -->
+    <script src="./script/fixation.js"></script>
+    <!--  sub_03  -->
+    <script src="./script/sub_03/sub_03.js"></script>>
+
+</body>
+
+</html>

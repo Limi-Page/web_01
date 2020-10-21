@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HAPPY POINT</title>
+    <!--  style  -->
+    <link rel="stylesheet" href="./css/login.css">
+    <!--  font  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+</head>
+
+<body>
+    <!--  상단  -->
+    <? include "./inc/mini_header.html"; ?>
+    <!--  content  -->
+    <main>
+        <div class="login-page">
+            <div class="form">
+                <!--    가입창    -->
+                <form class="toggle_tab register-form">
+                    <input type="text" placeholder="이름" />
+                    <input type="password" placeholder="비밀번호" />
+                    <input type="text" placeholder="E-mail 주소" />
+                    <button>Create</button>
+                    <p class="message">가입하셨나요? <a href="#">로그인하기</a></p>
+                </form>
+                <!--    로그인창    -->
+                <form class="toggle_tab login-form">
+                    <input type="text" placeholder="ID" />
+                    <input type="password" placeholder="비밀번호" />
+                    <button>로그인</button>
+                    <div class="keep_l">
+                        <input type="checkbox" id="keepLogin" name="keepLogin">
+                        <label for="keepLogin"><span>로그인 상태 유지</span></label>
+                    </div>
+                    <p class="message">회원가입하시겠습니까? <a href="#">회원가입</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--  하단  -->
+    <? include "./inc/footer.html"; ?>
+    <!--  JAVA script  -->
+    <script src="./script/jquery-1.12.4.js"></script>
+    <!--  header menu  -->
+    <script src="./script/fixation.js"></script>
+    <!--  login script  -->
+    <script src="./script/login.js"></script>
+    <!--  font-Awesome  -->
+    <script src="./script/all.js"></script>
+</body>
+
+</html>

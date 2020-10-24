@@ -1,0 +1,136 @@
+/*상단*/
+
+#header {
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 10;
+    padding-top: 10px;
+    height: 6.33rem;
+    transition: all 0.8s;
+    box-shadow: 1px -9px 11px 1px rgba(5, 5, 5, 0.8);
+}
+
+
+#header h1 {
+    float: left;
+    height: 100%;
+    width: 30%;
+    line-height: 3;
+}
+
+#header h1 a img {
+    margin-top: 15px;
+    width: 75%;
+    box-sizing: border-box;
+    
+}
+
+#header .mini_menu {
+    float: right;
+    width: 35%;
+    text-align: center;
+    margin-top: 5px
+}
+
+#header .mini_menu ul.min_m {
+    width: 100%;
+}
+
+#header .mini_menu ul.min_m li {
+    float: left;
+    width: 20%;
+}
+
+#header .mini_menu ul.min_m li a {
+    color: #fff;
+    display: block;
+    padding: 0 2px;
+    font-size: 0.8rem;
+    font-family: "NanumBarunGothic";
+}
+
+#header .nav {
+    float: right;
+    width: 70%;
+    text-align: center;
+}
+
+#header .nav ul.menu {
+    width: 100%;
+    position: relative;
+    top: 10px;
+    right: 50px;
+    z-index: 2;
+}
+
+#header .nav ul.menu li {
+    float: left;
+    width: 20%;
+    position: relative;
+
+}
+
+#header .nav ul.menu li a {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+    display: block;
+    padding: 13px;
+    font-family: "NanumSquare" !important;
+}
+
+#header .nav ul.submenu {
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    display: none;
+    top: 60px;
+}
+
+#header .nav li:first-child .submenu::before {
+    content: "";
+    position: absolute;
+    left: -100vw;
+    width: 300vw;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+#header .nav ul.submenu li {
+    width: 100%;
+}
+
+#header .nav ul.submenu li a {
+    font-size: 1.05rem;
+    color: #fff;
+}
+
+#header button {
+    float: right;
+    position: relative;
+    top: -36px;
+    right: 19px;
+    border: 0;
+    background: none;
+}
+
+#header button a {
+    font-size: 28px;
+    color: #fff;
+}
+
+
+/*상단.active됬을떄*/
+#header.active {
+    background-color: rgba(0,0,0,0.8);
+    box-shadow: -7px -8px 12px 3px rgba(0, 0, 0, 1);
+}
+/*
+#header.active .mini_menu ul.min_m li a,
+#header.active .nav ul.menu li a,
+#header.active button a{
+     color: #757575;
+}
+*/
+

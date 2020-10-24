@@ -1,0 +1,60 @@
+
+/*하단*/
+#footer {
+    background: #111;
+    color: #bbb;
+    height: 250px;
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+#footer .copy {
+    width: 45%;
+    float: left;
+    line-height: 35px
+}
+
+#footer .copy li:first-child {
+    font-size: 18px;
+    line-height: 35px;
+}
+
+#footer .copy_1 {
+    width: 35%;
+    float: left;
+    line-height: 35px
+}
+
+#footer .f_site {
+    width: 20%;
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#footer .f_site img {
+    width: 120px;
+    display: block;
+    margin: 20px auto;
+}
+
+#footer .f_menu {
+    width: 80%;
+    float: left;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#footer .f_menu a {
+    padding-right: 30px;
+    color: #fff;
+}
+
+#footer .f_menu a:last-child {
+    padding: 0;
+}
+
+#footer .f_menu a:hover {
+    color: #B21959;
+    font-weight: bold;
+}

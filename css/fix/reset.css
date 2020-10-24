@@ -1,0 +1,51 @@
+/*하단*/
+@import url(./footer.css);
+
+/*나눔고딕폰트*/
+@import url(./font.css);
+
+/*어썸폰트*/
+@import url(./all.css);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border : 0;
+    list-style: none;
+    font-family:  "NanumSquare", "NanumBarunGothic", sans-serif;
+    vertical-align: baseline;
+    background: transparent;
+    line-height: 1.4em;
+}
+
+a,a:hover, a:focus, a:active {
+    color: #c5819a;
+    text-decoration: none;
+
+}
+
+.clearfix::before,
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+button {
+    outline:none;
+}
+
+input[type=password] {
+
+font-family: sans-serif !important;
+
+}
+
+/*레이아웃*/
+.wrap {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem
+}
+

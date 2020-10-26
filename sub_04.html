@@ -3,91 +3,61 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>HAPPY POINT</title>
     <!--  style  -->
     <link rel="stylesheet" href="./css/sub_04.css">
     <!--  font  -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <!--  Scroll li  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 
 <body>
     <!--  상단  -->
-    <header id="header" class="clearfix">
-        <h1>
-            <a href="./index.html">
-                <img src="./images/wide_logo.png" alt="로고">
-            </a>
-        </h1>
-        <div class="mini_menu">
-            <ul class="min_m">
-                <li><a href="#" onclick="login_test()">LOGIN</a></li>
-                <li><a href="#" onclick="ready_test()">회원가입</a></li>
-                <li><a href="#" onclick="ready_test()">멤버십라운지</a></li>
-                <li><a href="#" onclick="ready_test()">매장찾기</a></li>
-                <li><a href="#" onclick="ready_test()">고객센터</a></li>
-            </ul>
-        </div>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="./sub_01.html">소개</a>
-                    <ul class="submenu">
-                        <li><a href="#">브랜드 소개</a></li>
-                        <li><a href="#">Member Ship</a></li>
-                        <li><a href="#">해피포인트 APP</a></li>
-                    </ul>
-                </li>
-                <li><a href="./sub_02.html">제휴</a>
-                    <ul class="submenu">
-                        <li><a href="#">제휴사 혜택</a></li>
-                        <li><a href="#">제휴카드</a></li>
-                    </ul>
-                </li>
-                <li><a href="./sub_03.html">이벤트/쿠폰</a>
-                    <ul class="submenu">
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">당첨자발표</a></li>
-                        <li><a href="#">쿠폰</a></li>
-                    </ul>
-                </li>
-                <li><a href="./sub_03.html">나눔</a>
-                    <ul class="submenu">
-                        <li><a href="#">해피기부</a></li>
-                        <li><a href="#">해피봉사단</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" onclick="login_test()">나의정보</a></li>
-            </ul>
-            <button><a href="#"><i class="fas fa-bars"></i></a></button>
-        </nav>
-
-    </header>
-
+    <? include "./inc/test_header.html"; ?>
     <!--  content  -->
     <section class="contents">
-        <div class="event_coupon">
-            <div class="ec_wrap">
-                <div class="ec_header">
-                    <h1>나눔</h1>
-                    <p>세상을 행복하게 만드는 기부에 참여해보세요.</p>
+        <div class="wlefare_container">
+            <section class="p_sticky">
+                <div id="Sub_title">
+                    <div class="Sub_wrap">
+                        <div class="Sub_inner">
+                            <div class="container">
+                                <h2>나눔<span>Welfare</span></h2>
+                                <p>세상을 행복하게 만드는 기부에 참여해보세요.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="ec_nav">
-                    <ul>
-                        <li class="on" data-tab=tab_1><a href="#">기부소개</a></li>
-                        <li data-tab=tab_2><a href="#">기부활동</a></li>
-                        <li data-tab=tab_3><a href="#">해피나눔 당첨자 발표</a></li>
-                        <li data-tab=tab_4><a href="#">해피봉사단</a></li>
-                    </ul>
+                <div class="wf_wrap">
+                    <!--  이부분이 패딩값 들고있는 부분  -->
+                    <div class="wf_nav">
+                        <ul>
+                            <li class="on" data-tab=tab_1><a href="#">기부소개</a></li>
+                            <li data-tab=tab_2><a href="#">기부활동</a></li>
+                            <li data-tab=tab_3><a href="#">해피나눔 당첨자 발표</a></li>
+                            <li data-tab=tab_4><a href="#">해피봉사단</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <main id="welfare">
-                    <div id="tab_1" class="welfare_Info tabs on">
+
+            </section>
+            <main id="welfare">
+                <div class="wf_wrap">
+                    <div id="tab_1" class="welfare_Info tabs">
                         <h2>해피포인트 기부소개</h2>
                         <p>해피포인트 카드가 탄생한 2000년부터 아름다운 나눔은 시작되었습니다.<br>
                             이제, 세상은 여러분이 주신 사랑으로 더욱 빛나고 따듯해 질 것입니다.</p>
                         <div class="detail">
                             <dt>해피포인트 기부금은 어떻게 쓰여지나요?</dt>
                             <dd>기부에 동의하신 회원님들이 적립한 해피포인트 중 10%가 모여 조성되었습니다.<br>
-                                여러분의 참여로 이루어진 기부금은 사회 곳곳 소외된 이들을 위해 감사히 쓰여질 것입니다</dd>
-                            <dd><a href="#" onclick="login_test()">나의 기부내역 확인하기</a></dd>
+                                여러분의 참여로 이루어진 기부금은 사회 곳곳 소외된 이들을 위해 감사히 쓰여질 것입니다.
+
+                            </dd>
+                            <dd>
+                                <a class="dd_button" href="#" onclick="login_test()">나의 기부내역 확인하기</a>
+                            </dd>
                         </div>
                         <form class="board list_table">
                             <h4 class="table_title">기부금 전달 내역</h4>
@@ -95,7 +65,7 @@
                                 <colgroup>
                                     <col width="150">
                                     <col width="400">
-                                    <col width="380">
+                                    <col width="200">
                                     <col width="200">
                                 </colgroup>
                                 <thead>
@@ -249,33 +219,55 @@
                                     </tr>
                                 </tbody>
                             </table>
-                            <p>※ 해피포인트 적립 기부금은 기부 영수증 발급 대상이 아닙니다.</p>
+                            <p class="last_text">※ 해피포인트 적립 기부금은 기부 영수증 발급 대상이 아닙니다.</p>
                         </form>
                     </div>
+                    <div class="boundary_line"></div>
                     <div id="tab_2" class="welfare_Ac tabs">
                         <h2>해피포인트 기부활동</h2>
                         <p>해피포인트는 고객님이 기부해주신 소중한 기금으로 Unicef를 통해 전세계 어린이들에게<br>
                             깨끗한 식수와 영양실조 치료식을 제공하는 등 다양한 지원 활동을 펼칩니다.</p>
                         <div class="w_act">
                             <div class="title">
-                                <img src="https://www.happypointcard.com/resources/img/donate/activity_img01.jpg" alt="">
-                            </div>
-                            <div class="activitys c1">
-                                <h5 class="pagein_title">영양실조</h5>
+                                <div class="title_1" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                                    <img src="./images/sub_04/wf_01.jpg" alt="기부활동 01">
+                                </div>
+                                <div class="title_2" data-aos="fade-left" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+                                    <img src="./images/sub_04/wf_01.jpg" alt="기부활동 01">
+                                </div>
+</div>
+                            <div class="C_all chapter_1 영양실조">
+                                <h5 class="chapter_title">영양실조</h5>
                                 <dl>
                                     <dt>적절한 영양을 섭취하는 것은 어린이의 가장 기본적인 권리입니다. </dt>
                                     <dd>
-                                        전세계적으로 영양 실조로 인해 발육이 저해되고 있는 5세 미만 어린이는 1억 5천 9백만명<br>
-                                        으로 추정되며, 나이에 비해 체중이 모자라는 저체중아도 9천 5백만 명에 달합니다.<br>
-                                        대부분의 국가에서 영양실조율은 꾸준히 낮아지고 있지만 사하라 이남 아프리카에서는<br>
-                                        오히려 높아졌습니다. 최근 이 지역은 에이즈의 확산으로 영양실조율이 더 높아지고 있습<br>
-                                        니다. (2014년 기준)
+                                        전세계적으로 영양 실조로 인해 발육이 저해되고 있는<br>
+                                        5세 미만 어린이는 1억 5천 9백만명 으로 추정되며,<br>
+                                        나이에 비해 체중이 모자라는 저체중아도 9천 5백만 명에 달합니다.<br>
+                                        대부분의 국가에서 영양실조율은 꾸준히 낮아지고 있지만,<br>
+                                        사하라 이남 아프리카에서는 오히려 높아졌습니다.<br>
+                                        최근 이 지역은 에이즈의 확산으로 영양실조율이 더 높아지고 있습니다.<br>
+                                        (2014년 기준)
                                     </dd>
                                 </dl>
-                            </div>
-
-                            <div class="activitys c2">
-                                <h5 class="pagein_title">영양부족 개선을 위한 유니세프 활동</h5>
+</div>
+                            <div class="C_all chapter_2 식수위생">
+                                <h5 class="chapter_title">식수위생</h5>
+                                <dl>
+                                    <dt>생명을 살리는 깨끗하고 안전한 물이 필요해요.</dt>
+                                    <dd>
+                                        안전한 식수를 사용하지 못하는 인구 11억명.<br>
+                                        오염된 물로 인한 설사병으로 매일 어린이 2,000명이 생명을 잃습니다.<br>
+                                        식수를 얻기 위해 학교를 가지 못하고,<br>
+                                        등뼈가 휘는 등 성장 발육이 미달되는 아이들은<br>
+                                        성인으로 성장 시 불임의 가능성까지 있습니다.<br>
+                                        아시아 및 아프리카 여자어린이 7명 중 2명<br>
+                                        은 열악한 화장실 때문에 학업을 중도에 포기합니다.
+                                    </dd>
+                                </dl>
+</div>
+                            <div class="chapter_3 유니세프활동">
+                                <h5 class="chapter_title">영양부족 개선을 위한 유니세프 활동</h5>
 
                                 <div class="cf">
                                     <dl>
@@ -286,7 +278,7 @@
                                             핵심입니다.
                                         </dd>
                                         <dd class="img">
-                                            <img src="/resources/img/donate/activity_img03.jpg" alt="">
+                                            <img src="./images/sub_04/wf_03.jpg" alt="기부활동 03">
                                         </dd>
                                     </dl>
 
@@ -298,7 +290,7 @@
                                             비타민을 공급합니다.
                                         </dd>
                                         <dd class="img">
-                                            <img src="/resources/img/donate/activity_img04.jpg" alt="">
+                                            <img src="./images/sub_04/wf_04.jpg" alt="기부활동 04">
                                         </dd>
                                     </dl>
 
@@ -311,34 +303,27 @@
                                             조사, 평가하고 있습니다.
                                         </dd>
                                         <dd class="img">
-                                            <img src="/resources/img/donate/activity_img05.jpg" alt="">
+                                            <img src="./images/sub_04/wf_05.jpg" alt="기부활동 05">
                                         </dd>
                                     </dl>
                                 </div>
-                            </div>
-                            <div class="activitys c3">
-                                <h5 class="pagein_title">해피포인트 후원금으로 보내진 구호 품목</h5>
+</div>
+                           
+                           
+                           
+                           
+<!--
+                           
+                            <div class="chapter_4">
+                                <h5 class="chapter_title">해피포인트 후원금으로 보내진 구호 품목</h5>
                                 <ul>
                                     <li>영양실조 치료식<span>1,000여개</span></li>
                                     <li>복합 미량 영양소<span>2,000여개</span></li>
                                     <li>영유아 몸무게 측정기<span>200여개</span></li>
                                 </ul>
-                            </div>
-                            <div class="activitys c1 c4">
-                                <h5 class="pagein_title">식수위생</h5>
-                                <dl>
-                                    <dt>생명을 살리는 깨끗하고 안전한 물이 필요해요.</dt>
-                                    <dd>
-                                        안전한 식수를 사용하지 못하는 인구 11억명.<br>
-                                        오염된 물로 인한 설사병으로 매일 어린이 2,000명이 생명을 잃습니다.<br>
-                                        식수를 얻기 위해 학교를 가지 못하고, 등뼈가 휘는 등 성장 발육이 미달되는 아이들은<br>
-                                        성인으로 성장 시 불임의 가능성까지 있습니다. 아시아 및 아프리카 여자어린이 7명 중 2명<br>
-                                        은 열악한 화장실 때문에 학업을 중도에 포기합니다.
-                                    </dd>
-                                </dl>
-                            </div>
-                            <div class="activitys c2 c5">
-                                <h5 class="pagein_title">식수위생 개선을 위한 유니세프 활동</h5>
+</div>
+                            <div class="chapter_5">
+                                <h5 class="chapter_title">식수위생 개선을 위한 유니세프 활동</h5>
                                 <div class="cf">
                                     <dl>
                                         <dt>위생교육</dt>
@@ -348,7 +333,7 @@
                                             위생교육을 실시 합니다.
                                         </dd>
                                         <dd class="img">
-                                            <img src="/resources/img/donate/activity_img08.jpg" alt="">
+                                            <img src="./images/sub_04/wf_06.jpg" alt="">
                                         </dd>
                                     </dl>
 
@@ -358,23 +343,25 @@
                                             유니세프는 수질 보장을 위해 국가수질기준의 법제화 추진과
                                             지역사회 차원의 수질 검사 시스템을 개발, 지원하고 있습니다.
                                         </dd>
-                                        <dd class="img"><img src="/resources/img/donate/activity_img09.jpg" alt=""></dd>
+                                        <dd class="img"><img src="./images/sub_04/wf_07.jpg" alt=""></dd>
                                     </dl>
                                 </div>
-                            </div>
-                            <div class="activitys c3 c6">
-                                <h5 class="pagein_title">해피포인트 후원금으로 보내진 구호 품목</h5>
+</div>
+                            <div class="chapter_6">
+                                <h5 class="chapter_title">해피포인트 후원금으로 보내진 구호 품목</h5>
                                 <ul>
                                     <li>깨끗한 식수킷<span>250여개</span></li>
                                     <li>식수 정화제<span>1,000여개</span></li>
                                 </ul>
-                            </div>
-                            <div class="activitys end">
+</div>
+                            <div class="chapter_7">
                                 <h5 class="blind">아름다운 사회 환원</h5>
                                 <p class="blind">이 아이들이 항상 미소를 잃지 않도록 따뜻한 사랑을 주세요. SPC그룹은 유니세프를 통해 전 세계 어린이들에게 깨끗한 식수와 영양실조 치료식을 제공합니다.</p>
-                            </div>
+</div>
+-->
                         </div>
                     </div>
+                    <div class="boundary_line"></div>
                     <div id="tab_3" class="welfare_Ann tabs">
                         <div class="innerBox">
                             <h2>해피나눔 당첨자 발표</h2>
@@ -448,6 +435,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="boundary_line"></div>
                     <div id="tab_4" class="welfare_Vol tabs">
                         <div class="innerBox">
                             <h2>해피봉사단 안내</h2>
@@ -456,69 +444,48 @@
                                     <img src="./images/sub_04/wf_party.png" alt="Happy Birthday Party ">
                                 </div>
                                 <div class="sec_02">
-                                    <button><a href="http://www.spc.co.kr/contributionEpilogueList">Happy Birthday Party 후기</a></button>
-                                   
+                                    <button><a href="http://www.spc.co.kr/contributionEpilogueList" target="_blank">Happy Birthday Party 후기</a></button>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </main>
-            </div>
+                </div>
+                
+            </main>
         </div>
     </section>
 
     <!--  하단  -->
-    <footer id="footer" class="clearfix">
-        <div class="wrap">
-            <ul class="copy">
-                <li>주식회사 에스피씨클라우드</li>
-                <li>사업자 등록번호: 264-81-21971</li>
-                <li>서울특별시 서초구 남부순환로 2620 (양재동 11-149) 에스피씨클라우드</li>
-                <li>COPYRIGHT ⓒ SPC CLOUD. LTD ALL RIGHTS RESERVED.</li>
-            </ul>
-            <ul class="copy_1">
-                <li>해피포인트 고객센터: 080-320-1234 </li>
-                <li>평일(월~금) 오전9시~오후7 </li>
-                <li>토,일,공휴일 휴무</li>
-            </ul>
-            <div class="f_site">
-                <form action="">
-                    <select name="" id="">
-                        <option value="00">패밀리사이트</option>
-                        <option value="http://www.spc.co.kr/">SPC</option>
-                        <option value="http://www.pariscroissant.co.kr/">파리크라상</option>
-                        <option value="http://www.paris.co.kr/main/">파리바게뜨</option>
-                        <option value="http://www.caffe-pascucci.co.kr/">파스쿠찌</option>
-                        <option value="http://www.jambajuice.co.kr/web/main.asp">잠바주스</option>
-                        <option value="https://www.dqueenscatering.com/">디퀸즈케이터링</option>
-                        <option value="http://www.baskinrobbins.co.kr/">배스킨라빈스</option>
-                        <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
-                        <option value="http://www.bizeun.co.kr/">빚은</option>
-                        <option value="http://dining.spc.co.kr/index.do">SPC 외식브랜드</option>
-                        <option value="http://www.breadmall.co.kr/">브래드몰</option>
-                    </select>
-                    <img src="./images/f_logo.png" alt="하단로고">
-                </form>
-            </div>
-            <div class="f_menu">
-                <a href="#">개인정보 처리방침</a>
-                <a href="#">회원이용약관</a>
-                <a href="#">위치기반서비스</a>
-                <a href="#">거래희망회사 </a>
-                <a href="#">사전등록윤리신고센터</a>
-                <a href="#">이메일 무단수집거부</a>
-            </div>
-        </div>
-    </footer>
+    <? include "./inc/footer.html"; ?>
     <!--  script  -->
     <script src="./script/jquery-1.12.4.js"></script>
+    <!--  고정 SCRIPT  -->
+    <script src="./script/fixation.js"></script>
     <!--  font-Awesome  -->
     <script src="./script/all.js"></script>
-    <!--  header menu  -->
-    <script src="./script/fixation.js"></script>
-    <!--  sub_03  -->
-    <script src="./script/sub_03/sub_03.js"></script>>
+    <!--  Scroll js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS 초기화
+        AOS.init();
 
+    </script>
+    <script>
+        //Sub_4 클릭 탭처리 이동
+
+        $(".wf_nav >  ul > li").click(function() {
+            $(".wf_nav > ul  > li").removeClass("on")
+            $(this).addClass("on")
+            var value = $(this).attr("data-tab");
+            var scrollPosition = $("#" + value).offset().top - 460;
+
+            $("html, body").animate({
+                scrollTop: scrollPosition
+            }, 1000);
+        });
+
+    </script>
 </body>
 
 </html>

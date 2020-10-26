@@ -3,87 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>HAPPY POINT</title>
     <!--  style  -->
     <link rel="stylesheet" href="./css/sub_02.css">
     <!--  font  -->
     <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <!--  Scroll li  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
 </head>
 
 <body>
     <!--  상단  -->
-    <header id="header" class="clearfix">
-        <h1>
-            <a href="index.html">
-                <img src="./images/wide_logo.png" alt="로고">
-            </a>
-        </h1>
-        <div class="mini_menu">
-            <ul class="min_m">
-                <li><a href="#" onclick="login_test()">LOGIN</a></li>
-                <li><a href="#" onclick="ready_test()">회원가입</a></li>
-                <li><a href="#" onclick="ready_test()">멤버십라운지</a></li>
-                <li><a href="#" onclick="ready_test()">매장찾기</a></li>
-                <li><a href="#" onclick="ready_test()">고객센터</a></li>
-            </ul>
-        </div>
-        <nav class="nav">
-            <ul class="menu">
-                <li><a href="./sub_01.html">소개</a>
-                    <ul class="submenu">
-                        <li><a href="#">브랜드 소개</a></li>
-                        <li><a href="#">Member Ship</a></li>
-                        <li><a href="#">해피포인트 APP</a></li>
-                    </ul>
-                </li>
-                <li><a href="./sub_02.html">제휴</a>
-                    <ul class="submenu">
-                        <li><a href="#">제휴사 혜택</a></li>
-                        <li><a href="#">제휴카드</a></li>
-                    </ul>
-                </li>
-                <li><a href="./sub_03.html">이벤트/쿠폰</a>
-                    <ul class="submenu">
-                        <li><a href="#">이벤트</a></li>
-                        <li><a href="#">당첨자발표</a></li>
-                        <li><a href="#">쿠폰</a></li>
-                    </ul>
-                </li>
-                <li><a href="./sub_04.html">나눔</a>
-                    <ul class="submenu">
-                        <li><a href="#">해피기부</a></li>
-                        <li><a href="#">해피봉사단</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">나의정보</a></li>
-            </ul>
-            <button><a href="#"><i class="fas fa-bars"></i></a></button>
-        </nav>
-
-    </header>
+    <? include "./inc/test_header.html"; ?>
     <!--  content  -->
     <section class="contents">
         <div class="alliance">
-            <div class="alli_wrap">
-                <div class="alli_header">
-                    <h1>제휴 서비스</h1>
-                    <p>해피포인트는 문화, 여행 등 다양한 분야의 제휴사에서 할인 및 적립 받을 수 있습니다.</p>
+            <div id="Sub_title">
+                <div class="Sub_wrap">
+                    <div class="Sub_inner">
+                        <div class="container">
+                            <h2>제휴 서비스</h2>
+                            <p>해피포인트는 문화, 여행 등 다양한 분야의 제휴사에서 할인 및 적립 받을 수 있습니다.</p>
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="alli_wrap">
                 <div class="alli_nav">
                     <ul>
-                        <li><a href="#" class="on">전체</a></li>
-                        <li><a href="#">쇼핑</a></li>
-                        <li><a href="#">생활</a></li>
-                        <li><a href="#">여행</a></li>
-                        <li><a href="#">문화/테마파크</a></li>
-                        <li><a href="#">포인트전환</a></li>
+                        <li class="on" data-tab=all><a href="#">전체</a></li>
+                        <li data-tab=life><a href="#">생활</a></li>
+                        <li data-tab=shop><a href="#">쇼핑</a></li>
+                        <li data-tab=trip><a href="#">여행</a></li>
+                        <li data-tab=cultuer><a href="#">문화/테마파크</a></li>
+                        <li data-tab=point><a href="#">포인트전환</a></li>
                     </ul>
                 </div>
             </div>
             <div class="alli_list">
-                <div class="View_All">
+            <div class="View_All">
                     <ul class="alli_List_view">
-                        <li class="all shop">
+                        <li class="on all shop">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/s_01.jpg" alt="이미지자리"></p>
                             </a>
@@ -107,13 +69,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all shop">
+                        <li class="on all shop">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/s_02.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">CU
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -130,13 +92,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all shop">
+                        <li class="on all shop">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/s_03.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">TONYMOLY
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -151,13 +113,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all shop">
+                        <li class="on all shop">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/s_04.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">YES24
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -174,13 +136,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all shop">
+                        <li class="on all shop">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/s_05.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">AKmall
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -198,13 +160,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all shop">
+                        <li class="on all shop">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/s_06.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">THE BODY SHOP
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -221,13 +183,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_01.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">현대오일
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -243,13 +205,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_02.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">통인익스프레스
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -265,13 +227,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_03.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">대리주부
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -287,13 +249,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_04.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">한국자동차환경협회
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -313,13 +275,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_05.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">남양유업
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -334,13 +296,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_06.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">마카롱택시
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -355,13 +317,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_07.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">나우픽
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -376,7 +338,7 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all life">
+                        <li class="on all life">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/l_08.jpg" alt="이미지자리"></p>
                             </a>
@@ -399,13 +361,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all trip">
+                        <li class="on all trip">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/t_01.png" alt="이미지자리"></p>
                             </a>
                             <h2>
-                                <span class="title">신라면세점(오프라인)
-                                <button class="more">READ MORE</button></span>
+                                <span class="title">신라면세점<em>(오프라인)</em>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -423,19 +385,19 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all trip">
+                        <li class="on all trip">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/t_01.png" alt="이미지자리"></p>
                             </a>
                             <h2>
-                                <span class="title">신라면세점(온라인)
-                                <button class="more">READ MORE</button></span>
+                                <span class="title">신라면세점<em>(온라인)</em>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
                                     <li>대&emsp;&emsp;상 : 해피포인트카드 전 고객(해피앱 제시 고객)</li>
                                     <li>내&emsp;&emsp;용 : 신라인터넷면세점
-최대 17% 추가할인</li>
+                                        최대 17% 추가할인</li>
                                     <li>사&ensp;이&ensp;트 : <a href="http://www.shilladfs.com/"> http://www.shilladfs.com/</a></li>
                                     <li><br>
                                         주의사항 <br>
@@ -448,13 +410,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all cultuer">
+                        <li class="on all cultuer">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/c_01.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">메가박스
-                                <button class="more">More</button></span>
+                                    <button class="more">More</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -464,18 +426,18 @@
                                     <li><br>
                                         주의사항 <br>
                                         - 티켓 1매당 2,000원 할인<br>
-                                        - 할인금액 상당의 해피포인트 차감        
+                                        - 할인금액 상당의 해피포인트 차감
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="all cultuer">
+                        <li class="on all cultuer">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/c_02.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">카자니아
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -492,13 +454,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all cultuer">
+                        <li class="on all cultuer">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/c_03.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">한화아쿠아플라넷
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -515,15 +477,15 @@
                                         ※ 로그인 되어있는 앱 쿠폰함의 쿠폰과 신분증 같이 제시<br>
                                     </li>
                                 </ul>
-                                </div>
+                            </div>
                         </li>
-                        <li class="all cultuer">
+                        <li class="on all cultuer">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/c_04.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">국립오페라단
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -539,13 +501,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all cultuer">
+                        <li class="on all cultuer">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/c_05.jpg" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">유니버셜발레단
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -554,40 +516,40 @@
                                     <li>사&ensp;이&ensp;트 : <a href="http://www.universalballet.com">http://www.universalballet.com</a></li>
                                     <li><br>
                                         주의사항 <br>
-                                      - 티켓 수령 시 해피포인트카드 제시(미지참 시 차액지불) <br>
-                                      - 1인4매 할인
+                                        - 티켓 수령 시 해피포인트카드 제시(미지참 시 차액지불) <br>
+                                        - 1인4매 할인
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="all cultuer">
+                        <li class="on all cultuer">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/c_06.png" alt="이미지자리"></p>
                             </a>
-                                <h2>
-                                    <span class="title">VR스테이션
+                            <h2>
+                                <span class="title">VR스테이션
                                     <button class="more">READ MORE</button></span>
-                                </h2>
-                                <div class="alli_info_text">
-                                    <ul>
-                                        <li>대&emsp;&emsp;상 : 해피포인트카드 전고객</li>
-                                        <li>내&emsp;&emsp;용 : VR스테이션 이용권 최대 56% 할인</li>
-                                        <li>사&ensp;이&ensp;트 : <a href="https://www.h-vrstation.com/main">https://www.h-vrstation.com/main</a></li>
-                                        <li><br>
-                                            주의사항 <br>
-                                            - 해피포인트App에서 쿠폰 다운로드 후 사용 가능<br>
-                                            - 현장에서 티켓 발권 시 직원에게 쿠폰 제시
-                                        </li>
-                                    </ul>
-                                </div>
+                            </h2>
+                            <div class="alli_info_text">
+                                <ul>
+                                    <li>대&emsp;&emsp;상 : 해피포인트카드 전고객</li>
+                                    <li>내&emsp;&emsp;용 : VR스테이션 이용권 최대 56% 할인</li>
+                                    <li>사&ensp;이&ensp;트 : <a href="https://www.h-vrstation.com/main">https://www.h-vrstation.com/main</a></li>
+                                    <li><br>
+                                        주의사항 <br>
+                                        - 해피포인트App에서 쿠폰 다운로드 후 사용 가능<br>
+                                        - 현장에서 티켓 발권 시 직원에게 쿠폰 제시
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="all cultuer">
+                        <li class="on all cultuer">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/c_07.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">설악워터피아
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -602,13 +564,13 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all point">
+                        <li class="on all point">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/p_01.png" alt="이미지자리"></p>
                             </a>
                             <h2>
                                 <span class="title">마이 신한포인트
-                                <button class="more">READ MORE</button></span>
+                                    <button class="more">READ MORE</button></span>
                             </h2>
                             <div class="alli_info_text">
                                 <ul>
@@ -625,108 +587,110 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="all point">
+                        <li class="on all point">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/p_02.png" alt="이미지자리"></p>
                             </a>
-                                <h2>
-                                    <span class="title">헤이폴포인트
+                            <h2>
+                                <span class="title">헤이폴포인트
                                     <button class="more">READ MORE</button></span>
-                                </h2>
-                                <div class="alli_info_text">
-                                    <ul>
-                                        <li>대&emsp;&emsp;상 : 해피포인트카드 전고객</li>
-                                        <li>내&emsp;&emsp;용 : 헤이폴포인트 → 해피포인트 전환</li>
-                                        <li>사&ensp;이&ensp;트 : <a href=" http://www.heypoll.co.kr/"> http://www.heypoll.co.kr/</a></li>
-                                        <li>
-                                            주의사항 <br>
-                                            - 포인트 전환은 헤이폴 웹/앱 페이지에서 가능합니다.<br>
-                                            - 헤이폴포인트와 해피포인트간 전환비율은 1:1 입니다.<br>
-                                            - 포인트 전환 신청은최소 100포인트 이상, 월 최대 <br>&ensp;100,000포인트까지 전환이 가능합니다.<br>
-                                            - 실시간 전환이 완료된 해피포인트는 헤이폴포인트로 <br>&ensp;재적립이 불가합니다.<br>
-                                        </li>
-                                    </ul>
-                                </div>
+                            </h2>
+                            <div class="alli_info_text">
+                                <ul>
+                                    <li>대&emsp;&emsp;상 : 해피포인트카드 전고객</li>
+                                    <li>내&emsp;&emsp;용 : 헤이폴포인트 → 해피포인트 전환</li>
+                                    <li>사&ensp;이&ensp;트 : <a href=" http://www.heypoll.co.kr/"> http://www.heypoll.co.kr/</a></li>
+                                    <li>
+                                        주의사항 <br>
+                                        - 포인트 전환은 헤이폴 웹/앱 페이지에서 가능합니다.<br>
+                                        - 헤이폴포인트와 해피포인트간 전환비율은 1:1 입니다.<br>
+                                        - 포인트 전환 신청은최소 100포인트 이상, 월 최대 <br>&ensp;100,000포인트까지 전환이 가능합니다.<br>
+                                        - 실시간 전환이 완료된 해피포인트는 헤이폴포인트로 <br>&ensp;재적립이 불가합니다.<br>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
-                        <li class="all point">
+                        <li class="on all point">
                             <a href="#">
                                 <p class="b_logo"><img src="./images/sub_02/Alli_brand/p_03.png" alt="이미지자리"></p>
                             </a>
-                                <h2>
-                                    <span class="title">오투포인트
-                                        <button class="more">More</button></span>
-                                </h2>
-                                <div class="alli_info_text">
-                                    <ul>
-                                        <li>대&emsp;&emsp;상 : 해피포인트카드 전고객</li>
-                                        <li>내&emsp;&emsp;용 : 오투포인트 → 해피포인트 전환</li>
-                                        <li>사&ensp;이&ensp;트 : <a href=" http://www.o2point.co.kr/"> http://www.o2point.co.kr/</a></li>
-                                        <li><br>
-                                            주의사항 <br>
-                                             - 포인트 전환은 오투포인트 웹/앱 페이지에서 가능합니다.<br>
-                                            - 오투포인트와 해피포인트간 전환비율은 1:1 입니다.<br>
-                                            - 포인트 전환 신청은최소 100포인트 이상, 월 최대 <br>&ensp;100,000포인트까지 전환이 가능합니다.<br>
-                                            - 실시간 전환이 완료된 해피포인트는 오투포인트로 <br>&ensp;재적립이 불가합니다.<br>
-                                        </li>
-                                    </ul>
-                                </div>
+                            <h2>
+                                <span class="title">오투포인트
+                                    <button class="more">More</button></span>
+                            </h2>
+                            <div class="alli_info_text">
+                                <ul>
+                                    <li>대&emsp;&emsp;상 : 해피포인트카드 전고객</li>
+                                    <li>내&emsp;&emsp;용 : 오투포인트 → 해피포인트 전환</li>
+                                    <li>사&ensp;이&ensp;트 : <a href=" http://www.o2point.co.kr/"> http://www.o2point.co.kr/</a></li>
+                                    <li><br>
+                                        주의사항 <br>
+                                        - 포인트 전환은 오투포인트 웹/앱 페이지에서 가능합니다.<br>
+                                        - 오투포인트와 해피포인트간 전환비율은 1:1 입니다.<br>
+                                        - 포인트 전환 신청은최소 100포인트 이상, 월 최대 <br>&ensp;100,000포인트까지 전환이 가능합니다.<br>
+                                        - 실시간 전환이 완료된 해피포인트는 오투포인트로 <br>&ensp;재적립이 불가합니다.<br>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
+
     <!--  하단  -->
-    <footer id="footer" class="clearfix">
-        <div class="wrap">
-            <ul class="copy">
-                <li>주식회사 에스피씨클라우드</li>
-                <li>사업자 등록번호: 264-81-21971</li>
-                <li>서울특별시 서초구 남부순환로 2620 (양재동 11-149) 에스피씨클라우드</li>
-                <li>COPYRIGHT ⓒ SPC CLOUD. LTD ALL RIGHTS RESERVED.</li>
-            </ul>
-            <ul class="copy_1">
-                <li>해피포인트 고객센터: 080-320-1234 </li>
-                <li>평일(월~금) 오전9시~오후7 </li>
-                <li>토,일,공휴일 휴무</li>
-            </ul>
-            <div class="f_site">
-                <form action="">
-                    <select name="" id="">
-                        <option value="00">패밀리사이트</option>
-                        <option value="http://www.spc.co.kr/">SPC</option>
-                        <option value="http://www.pariscroissant.co.kr/">파리크라상</option>
-                        <option value="http://www.paris.co.kr/main/">파리바게뜨</option>
-                        <option value="http://www.caffe-pascucci.co.kr/">파스쿠찌</option>
-                        <option value="http://www.jambajuice.co.kr/web/main.asp">잠바주스</option>
-                        <option value="https://www.dqueenscatering.com/">디퀸즈케이터링</option>
-                        <option value="http://www.baskinrobbins.co.kr/">배스킨라빈스</option>
-                        <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
-                        <option value="http://www.bizeun.co.kr/">빚은</option>
-                        <option value="http://dining.spc.co.kr/index.do">SPC 외식브랜드</option>
-                        <option value="http://www.breadmall.co.kr/">브래드몰</option>
-                    </select>
-                    <img src="./images/f_logo.png" alt="하단로고">
-                </form>
-            </div>
-            <div class="f_menu">
-                <a href="#">개인정보 처리방침</a>
-                <a href="#">회원이용약관</a>
-                <a href="#">위치기반서비스</a>
-                <a href="#">거래희망회사 </a>
-                <a href="#">사전등록윤리신고센터</a>
-                <a href="#">이메일 무단수집거부</a>
-            </div>
-        </div>
-    </footer>
+    <? include "./inc/footer.html"; ?>
+
     <!--  script  -->
     <script src="./script/jquery-1.12.4.js"></script>
-    <!--  header menu  -->
+    <!--  고정 SCRIPT  -->
     <script src="./script/fixation.js"></script>
-    <!--  Page2 toggle  -->
-    <script src="./script/sub_02/sub_02.js"></script>
     <!--  font-Awesome  -->
     <script src="./script/all.js"></script>
+    <!--  Scroll js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS 초기화
+
+        AOS.init();
+
+    </script>
+
+    <script>
+        //숨긴 세부사항 보이기
+
+        $(".more").click(function(e) {
+            e.preventDefault();
+            $(this).parent().parent().parent().find(".alli_info_text").slideToggle();
+            $(this).parents().find(".alli_info_text").next().attr("toggleClass", "on");
+        });
+        
+        
+        $(".b_logo>img").click(function(e) {
+            e.preventDefault();
+            $(this).parent().parent().parent().find(".alli_info_text").slideToggle();
+            $(this).parents().find(".alli_info_text").next().attr("toggleClass", "on");
+        });
+        
+        //클릭시 화살표 이미지 변환
+     
+
+        //클릭 탭처리
+
+        $(".alli_nav >  ul > li").click(function() {
+
+            $(".alli_nav > ul  > li").removeClass("on");
+            $(".alli_List_view > li").removeClass("on");
+
+            $(this).addClass("on");
+
+
+            var tab_class = $(this).attr("data-tab");
+            $("." + tab_class).addClass("on");
+        });
+
+    </script>
 </body>
 
 </html>

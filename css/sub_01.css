@@ -1,0 +1,502 @@
+/*소개페이지 CSS*/
+
+/*reset*/
+@import url(./fix/reset.css);
+
+/*상단*/
+@import url(./fix/header.css);
+
+/*슬릭배너처리*/
+@import url(./slick.css);
+
+
+#container {
+    display: flex;
+    overflow: hidden;
+}
+
+
+/*서브타이틀 SYTLE*/
+
+
+#Sub_title {
+    background: url(../images/sub_tit_01.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Sub_wrap {
+    width: 100%;
+}
+
+.Sub_inner {
+    text-align: center;
+    color: #fff;
+    padding: 160px 0 60px;
+}
+
+.Sub_inner h2 {
+    font-size: 2.2rem;
+    font-weight: 800;
+    line-height: 1;
+    padding-bottom: 1rem;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000)  both;
+}
+
+.Sub_inner h2 span { 
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    font-weight: normal;
+    font-family: "NanumBarunGothic";    
+}
+
+.Sub_inner p {
+    font-size: 1.2rem;
+    font-family: "NanumBarunGothic";
+    animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+
+/*애니메이션*/
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -1rem;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: -1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+/*애니메이션 종료*/
+
+
+
+/*        Brand 소개        */
+
+
+.List_cont {
+    width: 100%;
+    overflow: hidden;
+    background: rgb(255, 255, 255);
+
+}
+
+.List_cont h1.t_01 {
+    text-align: right;
+    padding: 2.5rem 3rem ;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #292929;
+}
+.List_cont .brandList {}
+
+
+.List_cont .brandList ul {
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    height: 100%;
+}
+
+.List_cont .brandList ul li {
+    flex-grow: 0;
+    margin: 0.5rem auto;
+    width: 250px;
+    height: 139px;
+    vertical-align: top;
+    position: relative;
+    overflow: hidden;
+    border: 1px #ededee solid;
+    box-shadow: 5px 5px 12px #ededee;
+    box-sizing: border-box;
+   
+}
+
+
+.List_cont .brandList ul li > a {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    display: block;
+
+}
+.List_cont .brandList ul li img {
+    width: 100%;
+}
+
+.List_cont .brandList ul li:hover img {
+    margin-top: -139px
+}
+
+
+/*        membership     */
+
+
+.mainPlayer {
+    position: relative;
+    margin: 10% auto;
+    max-width: 1400px;
+}
+
+.innerBox {
+    position: relative;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.mainPlayer .innerBox:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: -100px;
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    background: #edd7df;
+    transform-origin: 45% 45%;
+    animation: cycleM 5s linear infinite alternate both;
+}
+
+.mainPlayer .mainWrap:before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -144px;
+    right: -352px;
+    width: 450px;
+    height: 479px;
+    background: url(../images/shape1.gif) no-repeat;
+    transform: rotate(30deg);
+}
+
+.mainPlayer .slickWrap {
+    position: relative;
+    margin-top: 70px;
+}
+
+.mainPlayer .slickInfo {}
+
+.mainPlayer .slickInfo h1 {
+    font-weight: 800;;
+    font-size: 4rem;
+    color: #c5819a
+}
+
+.mainPlayer .slickInfo .text {
+    margin-top: 1%;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.8;
+    color: #686868;
+    font-family: "NanumBarunGothic";
+}
+
+.mainPlayer .slick-list {
+    margin-top: 2%
+}
+
+.mainPlayer .slick_m {
+    box-sizing: border-box;
+    margin: 0 15px;
+    opacity: 1;
+    transition: all .3s ease;
+    cursor: pointer;
+    padding-right: 5%;
+    width: 100%;
+    height: 100%;
+}
+
+.mainPlayer .slickBox {
+    position: relative;
+    left: 12%;
+}
+
+.mainPlayer .slickBox .img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    transform: scale(1);
+}
+
+.mainPlayer .slickBox .img:hover {
+    transform: scale(0.9);
+}
+
+.mainPlayer .slickBox .img img {
+    width: 100%;
+}
+
+.mainPlayer .slickBox .title {
+    margin-left: 15px;
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.mainPlayer .slickBox .text {
+    margin-left: 15px;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #999999;
+    font-family: "NanumBarunGothic";
+}
+
+
+.slick-arrow {
+    font-size: 0px;
+}
+
+.slick-prev {
+    position: absolute;
+    left: -12%;
+    top: 0;
+    width: 52px;
+    height: 52px;
+    background: url("../images/icons/btn_arrow_off.png") no-repeat;
+    background-size: 52px 52px;
+    transition: all .3s ease;
+}
+
+.slick-prev:hover {
+    background-image: url('../images/icons/btn_arrow_on.png')
+}
+
+.slick-next {
+    position: absolute;
+    top: 0;
+    left: -6%;
+    width: 52px;
+    height: 52px;
+    background: url("../images/icons/btn_arrow_off.png") no-repeat;
+    background-size: cover;
+    transform: rotate(180deg);
+    transition: all .3s ease;
+}
+
+
+.slick-next:hover {
+    background-image: url('../images/icons/btn_arrow_on.png')
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes cycleM {
+    0% {
+        transform: translateY(0) scale(1);
+    }
+
+    100% {
+        transform: translateY(-40px) scale(1.2);
+    }
+}
+
+/* Happy Point App*/
+
+
+.innerBox_h {
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.appKitPlayer {
+    position: relative;
+    margin-top: 70px;
+}
+
+.appKitPlayer h2 {
+    position: relative;
+    z-index: 1;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #292929;
+    ;
+}
+
+.appKitPlayer span {
+    position: relative;
+    z-index: 1;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #7f7f7f;
+    line-height: 1.6;
+    font-family: "NanumBarunGothic";
+    left: 5px;
+
+}
+
+.appKitPlayer .text {
+    position: relative;
+    left: 5px;
+    z-index: 1;
+    padding-top: 1%;
+    font-size: 1.1rem;
+    color: #7f7f7f;
+    line-height: 1.6;
+    font-family: "NanumBarunGothic";
+}
+
+
+.appKitPlayer .btnAppDown {
+    margin: 40px 0 230px;
+}
+
+.appKitPlayer .btnPlay {
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    font-size: 0;
+    background: url('http://kihno.com/assets/images/player/btn_play.png') no-repeat;
+}
+
+.appKitPlayer .btnStore {
+    display: inline-block;
+    width: 220px;
+    height: 60px;
+    margin-left: 0.5%;
+    font-size: 0;
+    background: url('http://kihno.com/assets/images/player/btn_store.png') no-repeat;
+}
+
+.appKitPlayer .img1 {
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+
+.appKitPlayer .img2 {
+    position: absolute;
+    top: 140px;
+    right: 400px;
+}
+
+
+/*        해피포인트앱 설명        */
+
+.appInfoText {
+    padding: 50px 0;
+    background: #f8f8f8;
+}
+
+.appInfoText h2 {
+    padding-left: 45px;
+    line-height: 45px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #111;
+    background: url(../images/icons/05.png) no-repeat 0 center;
+    background-size: 38px;
+}
+
+.appInfoText .box {
+    overflow: hidden;
+    position: relative;
+    margin-top: 35px;
+    padding: 50px;
+}
+
+.appInfoText .box:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    border: 1px solid #e3e3e3;
+    box-sizing: border-box;
+}
+
+.appInfoText .box:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    width: 200px;
+    height: 200px;
+    border-left: 1px solid #e3e3e3;
+    background: #f8f8f8;
+    transform: rotate(-45deg);
+}
+
+.appInfoText .box h3 {
+    font-size: 1.2rem;
+    color: #111;
+    font-weight: bold;
+    padding-left: 30%;
+    margin-bottom: 0.5rem;
+}
+
+.appInfoText .box h3 em {
+    color: #c5819a;
+    font-style: normal;
+}
+
+.appInfoText .box ul {
+    padding-left: 30%;
+}
+
+.appInfoText .box li {
+    position: relative;
+    margin-top: 5px;
+    padding-left: 12px;
+    font-size: 1rem;
+    font-family: 'NanumBarunGothic'
+}
+
+.appInfoText .box li span {
+    color: #999;
+}
+
+.appInfoText .box li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 5px;
+    height: 1px;
+    background: #111;
+}
+
+.appInfoText .box .box_02,
+.appInfoText .box .box_03,
+.appInfoText .box .box_04, 
+.appInfoText .box .box_05 {
+    margin-top: 2.3rem
+}
+

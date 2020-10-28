@@ -88,6 +88,7 @@
     }
 }
 
+/*동영상 위 메인 내용*/
 
 .btn_intro {
     z-index: 2001;
@@ -159,6 +160,8 @@
     background-color: #b26f9a8f;
 }
 
+
+
 /*        메인 메뉴(떠다니는메뉴)        */
 
 .main-menu {
@@ -172,6 +175,10 @@
     margin-left: 210px;
     border-radius: 20px 20px 40px 40px;
     box-shadow: 0px -1px 20px 3px rgba(148, 148, 148, 0.2);
+}
+
+.main-menu  * {
+    font-family: "NanumBarunGothic";    
 }
 
 .main-menu {
@@ -227,18 +234,18 @@
     left: -1px;
 }
 
-.main-menu__button.is-active {
+.main-menu__button.active {
     background-color: #fff;
     color: #ef85a5;
     box-shadow: none;
 }
 
-.main-menu__button.is-active:nth-child(1):before,
-.main-menu__button.is-active:nth-child(2):before {
+.main-menu__button.active:nth-child(1):before,
+.main-menu__button.active:nth-child(2):before {
     display: none;
 }
 
-.main-menu__button.is-active .main-menu__underline {
+.main-menu__button.active .main-menu__underline {
     border-bottom: 2px solid #ef85a5;
 }
 
@@ -271,91 +278,10 @@
     display: inline-block;
 }
 
-.main-menu__image {
+.main-icon {
     position: absolute;
     top: 32px;
     right: 14px;
-}
-
-.main-menu-swiper {
-    position: relative;
-    height: 122px;
-}
-
-.main-menu-swiper__wrapper {
-    height: 110px !important;
-}
-
-.main-menu-swiper__anchor {
-    display: block;
-    overflow: hidden;
-    height: 110px;
-    border-radius: 0 0 50px 20px;
-}
-
-.main-menu-swiper__anchor img {
-    width: 100%;
-}
-
-.main-menu-swiper__controller {
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    width: 92px;
-    height: 24px;
-    border-radius: 12px;
-    background-color: #fff;
-    text-align: center;
-}
-
-.main-menu-swiper__button {
-    position: absolute;
-    top: 0;
-    width: 30px;
-    height: 24px;
-}
-
-.main-menu-swiper__button::before {
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-width: 3px;
-    border-style: solid;
-    border-color: transparent transparent #cfcfcf #cfcfcf;
-    content: "";
-}
-
-.main-menu-swiper__button--prev {
-    left: 0;
-}
-
-.main-menu-swiper__button--prev::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.main-menu-swiper__button--next {
-    right: 0;
-}
-
-.main-menu-swiper__button--next::before {
-    transform: translate(-50%, -50%) rotate(225deg);
-}
-
-.main-menu-swiper__page {
-    position: static;
-    display: inline-block;
-    width: auto !important;
-    font-size: 12px;
-    color: #666;
-    line-height: 24px;
-    vertical-align: top;
-}
-
-.main-menu-swiper .swiper-pagination-current {
-    color: #0076c0;
 }
 
 
@@ -550,25 +476,9 @@
 
 #main .m_03 .wrap .brand img:first-child {
     top: 621px;
-    animation: fadeInUp 2.5s forwards;
 }
 
 #main .m_03 .wrap .brand img:last-child {
     top: 19px;
     right: -265px;
-    animation: fadeInUp 2.5s forwards;
-}
-
-/*애니메이션효과*/
-
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0%);
-    }
 }

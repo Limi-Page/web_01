@@ -1,0 +1,287 @@
+/*제휴 CSS*/
+
+/*reset*/
+@import url(./fix/reset.css);
+
+/*상단*/
+@import url(./fix/header.css);
+
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 90px;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/*Contents*/
+
+.contents {
+    padding-bottom: 80px;
+}
+
+.contents .alliance {}
+
+
+/*서브타이틀 SYTLE*/
+
+
+#Sub_title {
+    background: url(../images/sub_tit_02.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Sub_wrap {
+    width: 100%;
+}
+
+.Sub_inner {
+    text-align: center;
+    color: #fff;
+    padding: 180px 0 60px;
+}
+
+.Sub_inner h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 10px;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+.Sub_inner p {
+    font-size: 1rem;
+    animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+}
+
+/*애니메이션*/
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -1rem;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 0.4em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+
+/* ALLi Nav*/
+
+.contents .alli_wrap {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    position: relative;
+    margin: 2rem auto 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.contents .alli_nav {
+    text-align: center;
+     background: #fff;
+}
+
+.contents .alli_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contents .alli_nav li {
+    background: #fff;
+    width: 16.66%;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 1.04rem;
+}
+
+.contents .alli_nav li:hover {
+    border-bottom: 1px solid #aaa;
+    transition: 1s;
+}
+
+.contents .alli_nav li:hover a {
+    color: #555;
+    font-weight: bold;
+}
+.contents .alli_nav li.on {
+   background: #fbfbfb;
+    border-bottom: 1px solid #aaa;
+    font-weight: bold;
+    font-size: 1.04rem;
+}
+
+.contents .alli_nav li.on a {
+    color: #555;
+}
+
+.contents .alli_nav a {
+     display: block;
+    color: #7f7f7f;
+    box-sizing: border-box;
+    padding: 20px
+}
+
+.contents .alli_nav a:hover {
+    background: #fbfbfb;
+}
+
+
+
+/*        제휴 리스트        */
+
+.alli_list {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.alli_list .alli_List_view {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.8rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+.alli_list .alli_List_view > li {
+    display: inline-block;
+    text-align: center;
+    padding: 0 1rem;
+    width: 33.3%;
+    box-sizing: border-box;
+    padding-bottom: 1.5rem;
+    display: none;
+}
+
+.alli_list .alli_List_view > li.on {
+    display: block;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.alli_list li a {}
+
+.alli_list li p img {
+    width: 100%;
+}
+
+.alli_list li h2 {
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: 0px 30px 20px 20px;
+
+}
+
+.alli_list li h2:after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #ddd;
+}
+
+.alli_list li h2 .title {
+    font-size: 1.5rem;
+    font-weight: 800;
+
+}
+
+.alli_list li h2 .title em {
+    font-style: normal;
+    font-size: 1.1rem;
+    margin-right: 0.1rem;
+    padding-left: 0.4rem
+}
+
+.alli_list .more {
+    position: absolute;
+    top: 14px;
+    right: 0;
+    padding-right: 1.5rem;
+    color: #7B7B7B;
+    font-family: 'NanumBarunGothic';
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.alli_list .more::after {
+    position: absolute;
+    content: "";
+    top: 40%;
+    right: 2px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/icons/icon_arrow.svg);
+    background-size: 100% 100%;
+    transition: transform 400ms ease-in-out;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+/*
+.alli_list .more::after{
+    transform: translateY(-50%) rotate(0deg);
+}
+*/
+
+.alli_info_text {
+    text-align: left;
+    margin-top: 1rem;
+    display: none;
+}
+
+.alli_info_text.on {
+    display: block;
+}
+
+.alli_info_text li {
+    line-height: 1.5rem;
+    padding-left: 1.8rem;
+
+    width: 100%;
+    font-family: "NanumBarunGothic", sans-serif;
+}

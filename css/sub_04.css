@@ -1,0 +1,458 @@
+/*나눔 CSS*/
+
+/*reset*/
+@import url(./fix/reset.css);
+
+/*상단*/
+@import url(./fix/header.css);
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0 90px;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+
+/*contents*/
+
+.contents {
+    padding-bottom: 80px;
+}
+
+/* 스크롤 했을때, 고정 할 부분 */
+
+.p_sticky {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: #fff;
+    display: none;
+}
+
+/*서브타이틀 SYTLE*/
+
+#Sub_title {
+    background: url(../images/sub_tit_03.png) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.Sub_wrap {
+    width: 100%;
+}
+
+.Sub_inner {
+    text-align: center;
+    color: #fff;
+    padding: 180px 0 60px;
+}
+
+.Sub_inner h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1;
+    padding-bottom: 10px;
+    animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+
+}
+
+.Sub_inner h2 span {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+    font-weight: normal;
+}
+
+.Sub_inner p {
+    font-size: 1rem;
+    font-family: 'NanumBarunGothic';
+    animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+}
+
+
+/*애니메이션*/
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -1rem;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@keyframes tracking-in-contract {
+    0% {
+        letter-spacing: 1em;
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        letter-spacing: normal;
+        opacity: 1;
+    }
+}
+
+/*애니메이션 종료*/
+
+
+/* welfare Nav*/
+
+ .wf_wrap {
+    width: 100%;
+    height: 100%;
+    max-width: 1280px;
+    position: relative;
+    margin: 2rem auto 0;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    padding: 0 1rem;
+}
+
+.contents .wf_nav {
+    text-align: center;
+    background: #fff;
+    z-index: 3;
+}
+
+.contents .wf_nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.contents .wf_nav li {
+    background: #fff;
+    width: 25%;
+    border-bottom: 1px solid #d8d8d8;
+    font-size: 1.04rem;
+}
+
+.contents .wf_nav li:hover {
+    border-bottom: 1px solid #aaa;
+    transition: 1s;
+}
+
+.contents .wf_nav li:hover a {
+    color: #555;
+    font-weight: bold;
+}
+
+.contents .wf_nav li.on {
+    background: #fbfbfb;
+    border-bottom: 1px solid #aaa;
+    font-weight: bold;
+    font-size: 1.04rem;
+
+}
+
+.contents .wf_nav li.on a {
+    color: #555;
+}
+
+.contents .wf_nav a {
+    display: block;
+    color: #7f7f7f;
+    box-sizing: border-box;
+    padding: 20px
+}
+
+.contents .wf_nav a:hover {
+    background: #fbfbfb;
+}
+
+
+/*동일내용 메인 style*/
+
+main .tabs {
+    margin: 3.8rem 0
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 1.3rem;
+    color: #555;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.boundary_line {
+    width: 100%;
+    border-bottom: 1px dashed #d9d9d9;
+}
+
+
+
+/*        기부소개        */
+
+main #tab_1 h2 {
+    font-size: 3.5rem;
+    animation: high 2s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.5s both;
+}
+
+
+
+/*tab_1 h2  애니메이션 효과*/
+
+@keyframes high {
+    0% {
+        letter-spacing: -1rem;
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+#welfare .tabs > p {
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+    color: #686868;
+    margin-bottom: 2rem;
+}
+
+.detail {
+    background: #fbf5f7;
+    width: 70%;
+    margin: 2rem auto 0;
+    padding: 3rem;
+    overflow: hidden;
+}
+
+.detail dt {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #c5819a;
+    
+}
+
+.detail dd {
+    margin-top: 1rem;
+    font-family: 'NanumBarunGothic';
+    color: #7f7f7f;
+    float: left;
+    
+}
+.detail dd:nth-child(3){
+    float: right;
+    padding-top: 10px;
+}
+
+.detail dd a.dd_button {
+    padding: 1rem;
+    border: 1px solid #c5819a;
+    
+}
+
+
+
+/* 기부내역 list table */
+
+.table_title {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+/*    color: #555;*/
+    color: #c5819a;
+    text-align: center;
+}
+
+.board.list_table table {
+    border-spacing: 0;
+    margin: 2rem auto;
+    color: #7f7f7f;
+}
+
+
+.board.list_table table thead th {
+    padding: 20px 10px;
+    font-size: 1.1rem;
+    font-weight: normal;
+    color: #555;
+    border-bottom: 1px solid #777;
+}
+
+tbody td.num {
+    color: #555;
+}
+
+.board.list_table table tbody tr > * {
+    height: 30px;
+    padding: 10px 10px;
+    font-size: 16px;
+    line-height: 3;
+    text-align: center;
+     border-bottom: 1px solid #d9d9d9;
+}
+
+.board.list_table table tr > *,
+.board.list_table table td > * {
+    font-family: 'NanumBarunGothic';
+    letter-spacing: 0;
+
+}
+
+.board.list_table table tbody .subject {
+    padding-left: 3rem;
+}
+
+.board.list_table table tbody .subject {
+    text-align: left;
+    font-size: 1.02rem
+}
+
+.board.list_table table td.num {
+    font-size: .99em !important;
+}
+
+.last_text {
+    text-align: center;
+    font-family: 'NanumBarunGothic';
+}
+
+
+
+
+/*    기부활동    */
+
+.chapter_title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+#tab_2 .w_act *{
+    font-family: 'NanumBarunGothic';
+}
+
+
+.chapter_1 {
+  text-align: right;
+    
+}
+
+
+.chapter_3 * {
+    text-align: center;
+}
+
+.chapter_3 .Nutrition {
+    display: flex;
+    flex-flow: nowrap;
+}
+.chapter_3 .Nutrition dl {
+    
+}
+
+/*        나눔 당첨자        */
+
+.news_list {
+    flex: 1;
+    max-width: 952px;
+    margin: 0 auto 50px auto;
+}
+
+.news_list ul {}
+
+.news_list ul li {
+    padding: 20px 20px 20px 0;
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    border-bottom: #CCC 1px dotted;
+}
+
+.c_number {
+    margin: 0 2rem 0 1rem;
+    width: 30px;
+    height: 33px;
+    overflow: hidden;
+    animation: rotate_image 1.5s linear infinite;
+    transform-origin: 50% 50%;
+    position: relative;
+    top: -4px;
+}
+
+.c_number img {
+    width: 100%
+}
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.date {
+    margin-right: 3rem;
+}
+
+.news_list ul li .title_wrap {
+    flex: 1;
+}
+
+.news_list ul li:after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 52px;
+    background: url(../images/icons/btn_arrow_off.png) no-repeat center;
+    transform: rotate(180deg);
+    background-size: cover;
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+
+
+
+/*        해피봉사단       */
+
+.wf_04_inner .sec_01 {
+    text-align: center
+}
+
+.wf_04_inner .sec_01 img {
+    width: 100%;
+    max-width: 950px;
+}
+
+.wf_04_inner .sec_02 {
+    text-align: center;
+    margin: 4rem 0;
+}
+
+.sec_02 button {
+    background: #edd7df;
+    padding: 1rem 1.5rem;
+}
+
+.sec_02 button a {
+    color: #c5819a;
+    font-size: 1.3rem;
+    font-weight: bold;
+}

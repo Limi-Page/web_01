@@ -89,7 +89,7 @@
         <div class="main-menu">
             <div class="main-menu__list" role="tablist">
                 <button class="main-menu__button active" type="button"><span class="main-menu__underline">자주찾는 메뉴</span></button>
-                <button class="main-menu__button" type="button"><span class="main-menu__underline">LOGIN</span></button>
+                <button class="main-menu__button" type="button"><span class="main-menu__underline" onclick="login_test()">LOGIN</span></button>
             </div>
 
             <div class="main-menu__panel active">
@@ -120,12 +120,16 @@
     <main id="main" class="clearfix">
         <div class="wrap">
             <div class="m_01">
-                <a href="#">
+                <div class="m1_img">
                     <img src="./images/main_1.png" alt="메인이미지01">
-                    <h2>Membership<br> Benefit</h2>
-                    <p>해피포인트 고객만의 다양하고 <br>특별한 혜택을 만나보세요</p>
+                </div>
+                <div class="m1_txt">
+                    <h2>HAPPYPOINT<br>Benefit</h2>
+                    <p>모으는 재미, 쓰는 기쁨을 선사합니다.</p>
+                    <p>해피포인트 고객만의 특별한 혜택과,<br>
+                    다양한 제휴사를 확인해 보세요</p>
                     <button>CHECK</button>
-                </a>
+                </div>
             </div>
         </div>
         <div class="m_02">
@@ -209,10 +213,9 @@
         <div class="m_03">
             <div class="wrap">
                 <h1>Brand<br>Franchise</h1>
-                <hr>
                 <div class="brand">
-                    <img src="./images/m_301.png" alt="왼쪽폰">
-                    <img src="./images/m_302.png" alt="오른쪽폰">
+                    <img src="./images/m3_01.png" alt="왼쪽폰">
+                    <img src="./images/m3_02.png" alt="오른쪽폰">
                 </div>
             </div>
         </div>
@@ -220,43 +223,50 @@
     <!--    하단     -->
     <footer id="footer">
         <div class="wrap">
-            <ul class="copy">
-                <li>주식회사 에스피씨클라우드</li>
-                <li>사업자 등록번호: 264-81-21971</li>
-                <li>서울특별시 서초구 남부순환로 2620 (양재동 11-149) 에스피씨클라우드</li>
-                <li>COPYRIGHT ⓒ SPC CLOUD. LTD ALL RIGHTS RESERVED.</li>
-            </ul>
-            <ul class="copy_1">
-                <li>해피포인트 고객센터: 080-320-1234 </li>
-                <li>평일(월~금) 오전9시~오후7 </li>
-                <li>토,일,공휴일 휴무</li>
-            </ul>
-            <div class="f_site">
-                <form action="">
-                    <select name="" id="">
-                        <option value="00">패밀리사이트</option>
-                        <option value="http://www.spc.co.kr/">SPC</option>
-                        <option value="http://www.pariscroissant.co.kr/">파리크라상</option>
-                        <option value="http://www.paris.co.kr/main/">파리바게뜨</option>
-                        <option value="http://www.caffe-pascucci.co.kr/">파스쿠찌</option>
-                        <option value="http://www.jambajuice.co.kr/web/main.asp">잠바주스</option>
-                        <option value="https://www.dqueenscatering.com/">디퀸즈케이터링</option>
-                        <option value="http://www.baskinrobbins.co.kr/">배스킨라빈스</option>
-                        <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
-                        <option value="http://www.bizeun.co.kr/">빚은</option>
-                        <option value="http://dining.spc.co.kr/index.do">SPC 외식브랜드</option>
-                        <option value="http://www.breadmall.co.kr/">브래드몰</option>
-                    </select>
-                    <img src="./images/f_logo.png" alt="하단로고">
-                </form>
-            </div>
-            <div class="f_menu">
-                <a href="#">개인정보 처리방침</a>
-                <a href="#">회원이용약관</a>
-                <a href="#">위치기반서비스</a>
-                <a href="#">거래희망회사 </a>
-                <a href="#">사전등록윤리신고센터</a>
-                <a href="#">이메일 무단수집거부</a>
+            <div class="f_inner">
+                <div class="f_text">
+                    <div class="f_menu">
+                        <a href="#">개인정보 처리방침</a>
+                        <a href="#">회원이용약관</a>
+                        <a href="#">위치기반서비스</a>
+                        <a href="#">거래희망회사 </a>
+                        <a href="#">사전등록윤리신고센터</a>
+                        <a href="#">이메일 무단수집거부</a>
+                    </div>
+                    <div class="f_info">
+                        <ul class="copy">
+                            <li>주식회사 에스피씨클라우드</li>
+                            <li>사업자 등록번호: 264-81-21971</li>
+                            <li>서울특별시 서초구 남부순환로 2620 (양재동 11-149) 에스피씨클라우드</li>
+                            <li>COPYRIGHT ⓒ SPC CLOUD. LTD ALL RIGHTS RESERVED.</li>
+                        </ul>
+                        <ul class="copy_1">
+                            <li>해피포인트 고객센터: 080-320-1234 </li>
+                            <li>평일(월~금) 오전9시~오후7 </li>
+                            <li>토,일,공휴일 휴무</li>
+                        </ul>
+                        <div class="f_site">
+                            <form action="">
+                                <select name="" id="">
+                                    <option value="00">패밀리사이트</option>
+                                    <option value="http://www.spc.co.kr/">SPC</option>
+                                    <option value="http://www.pariscroissant.co.kr/">파리크라상</option>
+                                    <option value="http://www.paris.co.kr/main/">파리바게뜨</option>
+                                    <option value="http://www.caffe-pascucci.co.kr/">파스쿠찌</option>
+                                    <option value="http://www.jambajuice.co.kr/web/main.asp">잠바주스</option>
+                                    <option value="https://www.dqueenscatering.com/">디퀸즈케이터링</option>
+                                    <option value="http://www.baskinrobbins.co.kr/">배스킨라빈스</option>
+                                    <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
+                                    <option value="http://www.bizeun.co.kr/">빚은</option>
+                                    <option value="http://dining.spc.co.kr/index.do">SPC 외식브랜드</option>
+                                    <option value="http://www.breadmall.co.kr/">브래드몰</option>
+                                </select>
+                                <img src="./images/f_logo.png" alt="하단로고">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </footer>

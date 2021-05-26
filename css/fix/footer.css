@@ -1,60 +1,82 @@
 
 /*하단*/
+
+#footer *{
+    font-family: "NanumBarunGothic";
+    font-size: 0.9rem;
+    line-height: 2;
+}
 #footer {
     background: #111;
     color: #bbb;
-    height: 250px;
+    overflow: hidden;
     box-sizing: border-box;
     padding: 20px 0;
+   
 }
 
-#footer .copy {
-    width: 45%;
-    float: left;
-    line-height: 35px
+
+#footer .f_inner {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+}
+#footer .f_text{
+    display: flex;
 }
 
-#footer .copy li:first-child {
-    font-size: 18px;
-    line-height: 35px;
+#footer .f_text .f_left {
+    flex-grow: 5;
+/*    width: 100%;*/
 }
-
-#footer .copy_1 {
-    width: 35%;
-    float: left;
-    line-height: 35px
-}
-
-#footer .f_site {
-    width: 20%;
-    float: right;
-    text-align: center;
-    margin-top: 20px;
-}
-
-#footer .f_site img {
-    width: 120px;
-    display: block;
-    margin: 20px auto;
-}
-
 #footer .f_menu {
-    width: 80%;
-    float: left;
+    margin-bottom: 0.8rem;
     text-align: center;
-    margin-top: 30px;
 }
 
-#footer .f_menu a {
-    padding-right: 30px;
-    color: #fff;
+#footer .f_menu a{
+    padding-left: 3%;
+   
 }
 
-#footer .f_menu a:last-child {
-    padding: 0;
+#footer .f_menu a:first-child{
+    padding-left: 0
 }
 
-#footer .f_menu a:hover {
-    color: #B21959;
-    font-weight: bold;
+#footer .f_info {
+    display: flex;
+    justify-content: space-between
 }
+
+.f_info .copy {
+   
+}
+
+#footer li:first-child {
+    font-size: 1rem;
+}
+#footer .f_site{
+    width: 100%;
+    
+}
+#footer .f_site form {
+    width: 100%;
+}
+#footer .f_site select {
+    width: 100%;
+    max-width: 150px;
+    border: 1px solid #999;
+    cursor: pointer;
+    color: #999;
+    padding: 2px 4px;
+}
+#footer .f_right{
+    margin: auto;
+}
+#footer img {
+/*    display: none;*/
+    max-width: 100px;
+    display: block;
+}
+

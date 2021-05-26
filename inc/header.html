@@ -1,50 +1,87 @@
- <header id="header" class="clearfix">
+ <!--    상단    -->
+    <header id="header">
         <div class="wrap">
             <h1>
-                <a href="../index.html">
-                    <img src="./images/test_logo2.png" alt="로고">
+                <a href="./index.html">
+                    <img src="./images/main_h_logo.png" alt="로고">
+                    <img src="./images/main_h_logo2.png" alt="로고">
                 </a>
             </h1>
-            <div class="mini_menu">
-                <ul class="min_m">
-                    <li><a href="#">LOGIN</a></li>
-                    <li><a href="#">회원가입</a></li>
-                    <li><a href="#">멤버십라운지</a></li>
-                    <li><a href="#">매장찾기</a></li>
-                    <li><a href="#">고객센터</a></li>
-                </ul>
+            <div class="nav_wrap">
+                <div class="mini_menu">
+                    <ul class="min_m">
+                        <li><a href="#" onclick="login_test()">LOGIN</a></li>
+                        <li><a href="#" onclick="ready_test()">회원가입</a></li>
+                        <li><a href="#" onclick="ready_test()">멤버십라운지</a></li>
+                        <li><a href="#" onclick="ready_test()">매장찾기</a></li>
+                        <li><a href="#" onclick="ready_test()">고객센터</a></li>
+                    </ul>
+                </div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="./sub_01.html">소개</a></li>
+                        <li><a href="./sub_02.html">제휴</a></li>
+                        <li><a href="./sub_03.html">이벤트/쿠폰</a></li>
+                        <li><a href="./sub_04.html">나눔</a></li>
+                        <li><a href="#" onclick="login_test()">나의정보</a></li>
+                        <li class="li_button"><button><a href="#"><i class="fas fa-bars"></i></a></button></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a href="#">소개</a>
-                        <ul class="submenu">
-                            <li><a href="#">브랜드 소개</a></li>
-                            <li><a href="#">Member Ship</a></li>
-                            <li><a href="#">해피포인트 APP</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">제휴</a>
-                        <ul class="submenu">
-                            <li><a href="#">제휴사 혜택</a></li>
-                            <li><a href="#">제휴카드</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">이벤트/쿠폰</a>
-                        <ul class="submenu">
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">당첨자발표</a></li>
-                            <li><a href="#">쿠폰</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">나눔</a>
-                        <ul class="submenu">
-                            <li><a href="#">해피기부</a></li>
-                            <li><a href="#">해피봉사단</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">나의정보</a></li>
-                </ul>
-                <button><a href="#"><i class="fas fa-bars"></i></a></button>
-            </nav>
         </div>
     </header>
+    <!--  사이드 메뉴  -->
+    <div class="Sidemenu">
+        <div class="sidemenu_inner">
+         <div class="close">
+              <button class="close"><a href="#"> <i class="fas fa-times"></i></a></button>
+          </div>
+          
+            <div class="side_header">
+                <p class="header_txt">
+                    로그인하고<br>
+                    해피포인트만의<br>
+                    특별한혜택을 누리세요!
+                </p>
+                <buttom>로그인</buttom>
+            </div>
+            <ul class="side_list">
+                <li><a href="#">소개</a>
+                    <ul class="side_sub">
+                        <li><a href="./sub_01.html">멤버십 소개</a></li>
+                        <li><a href="./sub_01.html">브랜드소개</a></li>
+                        <li><a href="./sub_01.html">해피포인트 APP</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제휴</a>
+                    <ul class="side_sub">
+                        <li><a href="./sub_02.html">제휴사 혜택</a></li>
+                        <li><a href="#" onclick="ready_test()">제휴카드 안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트/쿠폰</a>
+                    <ul class="side_sub">
+                        <li><a href="./sub_03.html">진행이벤트</a></li>
+                        <li><a href="./sub_03.html">종료이벤트</a></li>
+                        <li><a href="./sub_03.html">당첨자발표</a></li>
+                        <li><a href="./sub_03.html">쿠폰</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub_04.html">나눔</a></li>
+                <li><a href="#" onclick="login_test()">나의정보</a></li>
+            </ul>
+            <div class="side_bottom">
+                <div class="side_icon">
+                    <div class="left_icon">
+                        <a href="#" onclick="login_test()"><img src="./images/icons/01.png" alt="카드등록"></a>
+                        <a href="#" onclick="login_test()"><p>카드등록</p></a>
+                    </div>
+                    <div class="right_icon">
+                        <a href="#" onclick="ready_test()"><img src="./images/icons/08.png" alt="매장찾기"></a>
+                        <a href="#" onclick="ready_test()"><p>매장찾기</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dark_bg"></div>
+    </div>

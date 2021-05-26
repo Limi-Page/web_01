@@ -12,13 +12,24 @@ $(window).scroll(function () {
 
 
 //메뉴
-$(".nav  li").mouseover(function () {
-    $(".submenu").stop().fadeIn()
+$(".nav  .li_button").click(function () {
+    $(".dark_bg" ).stop().show();
+    $(".sidemenu_inner").css( { 'display' : 'block' } );
+    $(".sidemenu_inner").css( { 'right' : '-100%' } );
+    $(".sidemenu_inner").animate( { right: '0px' } );
 });
 
-$(".nav li").mouseleave(function () {
-    $(".submenu").stop().fadeOut()
+$(".close").click(function () {
+    $(".sidemenu_inner" ).animate( { right: '-100%' }, { 
+        complete:function(){
+            $(".dark_bg" ).css( { 'display' : 'none' }); }
+    });
 });
+
+$(".side_list >li").click(function () {
+    $(this).find(".side_sub").stop().slideToggle()
+});
+
 
 //로그인 Confirm창
 function login_test() {

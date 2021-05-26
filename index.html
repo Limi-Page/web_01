@@ -3,12 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <title>HAPPY POINT</title>
     <!--  style  -->
     <link rel="stylesheet" href="./css/index.css">
-    <!--  나눔스퀘어 Font  -->
-    <link rel="stylesheet" type="./css/index.css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <!--  font  -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <!--  Scroll li  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!--  미디어쿼리  -->
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -18,51 +22,87 @@
             <h1>
                 <a href="./index.html">
                     <img src="./images/main_h_logo.png" alt="로고">
+                    <img src="./images/main_h_logo2.png" alt="로고">
                 </a>
             </h1>
-            <div class="mini_menu">
-                <ul class="min_m">
-                    <li><a href="#" onclick="login_test()">LOGIN</a></li>
-                    <li><a href="#" onclick="ready_test()">회원가입</a></li>
-                    <li><a href="#" onclick="ready_test()">멤버십라운지</a></li>
-                    <li><a href="#" onclick="ready_test()">매장찾기</a></li>
-                    <li><a href="#" onclick="ready_test()">고객센터</a></li>
-                </ul>
+            <div class="nav_wrap">
+                <div class="mini_menu">
+                    <ul class="min_m">
+                        <li><a href="#" onclick="login_test()">LOGIN</a></li>
+                        <li><a href="#" onclick="ready_test()">회원가입</a></li>
+                        <li><a href="#" onclick="ready_test()">멤버십라운지</a></li>
+                        <li><a href="#" onclick="ready_test()">매장찾기</a></li>
+                        <li><a href="#" onclick="ready_test()">고객센터</a></li>
+                    </ul>
+                </div>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li><a href="./sub_01.html">소개</a></li>
+                        <li><a href="./sub_02.html">제휴</a></li>
+                        <li><a href="./sub_03.html">이벤트/쿠폰</a></li>
+                        <li><a href="./sub_04.html">나눔</a></li>
+                        <li><a href="#" onclick="login_test()">나의정보</a></li>
+                        <li class="li_button"><button><a href="#"><i class="fas fa-bars"></i></a></button></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="nav">
-                <ul class="menu">
-                    <li><a href="./sub_01.html">소개</a>
-                        <ul class="submenu">
-                            <li><a href="./sub_01.html">브랜드 소개</a></li>
-                            <li><a href="#">Member Ship</a></li>
-                            <li><a href="#">해피포인트 APP</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./sub_02.html">제휴</a>
-                        <ul class="submenu">
-                            <li><a href="#">제휴사 혜택</a></li>
-                            <li><a href="#">제휴카드</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./sub_03.html">이벤트/쿠폰</a>
-                        <ul class="submenu">
-                            <li><a href="#">이벤트</a></li>
-                            <li><a href="#">당첨자발표</a></li>
-                            <li><a href="#">쿠폰</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./sub_04.html">나눔</a>
-                        <ul class="submenu">
-                            <li><a href="#">해피기부</a></li>
-                            <li><a href="#">해피봉사단</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#" onclick="login_test()">나의정보</a></li>
-                </ul>
-                <button><a href="#"><i class="fas fa-bars"></i></a></button>
-            </nav>
         </div>
     </header>
+    <!--  사이드 메뉴  -->
+    <div class="Sidemenu">
+        <div class="sidemenu_inner">
+         <div class="close">
+              <button class="close"><a href="#"> <i class="fas fa-times"></i></a></button>
+          </div>
+          
+            <div class="side_header">
+                <p class="header_txt">
+                    로그인하고<br>
+                    해피포인트만의<br>
+                    특별한혜택을 누리세요!
+                </p>
+                <buttom>로그인</buttom>
+            </div>
+            <ul class="side_list">
+                <li><a href="#">소개</a>
+                    <ul class="side_sub">
+                        <li><a href="./sub_01.html">멤버십 소개</a></li>
+                        <li><a href="./sub_01.html">브랜드소개</a></li>
+                        <li><a href="./sub_01.html">해피포인트 APP</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">제휴</a>
+                    <ul class="side_sub">
+                        <li><a href="./sub_02.html">제휴사 혜택</a></li>
+                        <li><a href="#" onclick="ready_test()">제휴카드 안내</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">이벤트/쿠폰</a>
+                    <ul class="side_sub">
+                        <li><a href="./sub_03.html">진행이벤트</a></li>
+                        <li><a href="./sub_03.html">종료이벤트</a></li>
+                        <li><a href="./sub_03.html">당첨자발표</a></li>
+                        <li><a href="./sub_03.html">쿠폰</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub_04.html">나눔</a></li>
+                <li><a href="#" onclick="login_test()">나의정보</a></li>
+            </ul>
+            <div class="side_bottom">
+                <div class="side_icon">
+                    <div class="left_icon">
+                        <a href="#" onclick="login_test()"><img src="./images/icons/01.png" alt="카드등록"></a>
+                        <a href="#" onclick="login_test()"><p>카드등록</p></a>
+                    </div>
+                    <div class="right_icon">
+                        <a href="#" onclick="ready_test()"><img src="./images/icons/08.png" alt="매장찾기"></a>
+                        <a href="#" onclick="ready_test()"><p>매장찾기</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dark_bg"></div>
+    </div>
     <!--    상단배경    -->
     <div class="video_area">
         <div class="full_video" class="clearfix">
@@ -81,41 +121,40 @@
                     </p>
                     <a href="#" class="btn_intro">LEARN MORE<span></span></a>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!--    메뉴[고정]    -->
-    <div class="main">
-        <div class="main-menu">
-            <div class="main-menu__list" role="tablist">
-                <button class="main-menu__button active" type="button"><span class="main-menu__underline">자주찾는 메뉴</span></button>
-                <button class="main-menu__button" type="button"><span class="main-menu__underline" onclick="login_test()">LOGIN</span></button>
-            </div>
-
-            <div class="main-menu__panel active">
-                <h2 class="sr-only">자주찾는 메뉴</h2>
-
-                <div>
-                    <a class="main-menu__anchor" href="#">
-                        <span>카드<br>등록</span>
-                        <i class="main-icon"><img src="./images/icons/01.png" alt="카드등록"></i>
-                    </a>
-                    <a class="main-menu__anchor" href="#">
-                        <span>멤버십<br>라운지</span>
-                        <i class="main-icon"><img src="images/icons/02.png" alt="멤버십"></i>
-                    </a>
-                    <a class="main-menu__anchor" href="#">
-                        <span>적립/할인<br>브랜드</span>
-                        <i class="main-icon"><img src="images/icons/09.png" alt="브랜드"></i>
-                    </a>
-                    <a class="main-menu__anchor" href="#">
-                        <span>매장<br>찾기</span>
-                        <i class="main-icon"><img src="images/icons/08.png" alt="매장찾기"></i>
-                    </a>
+                <!--    메뉴[고정]    -->
+                <div class="main">
+                    <div class="main-menu">
+                        <div class="main-menu__list" role="tablist">
+                            <button class="main-menu__button active" type="button"><span class="main-menu__underline">자주찾는 메뉴</span></button>
+                            <button class="main-menu__button" type="button"><span class="main-menu__underline" onclick="login_test()">LOGIN</span></button>
+                        </div>
+                        <div class="main-menu__panel active">
+                            <h2 class="sr-only">자주찾는 메뉴</h2>
+                            <div>
+                                <a class="main-menu__anchor" href="#" onclick="login_test()">
+                                    <span>카드<br>등록</span>
+                                    <i class="main-icon"><img src="./images/icons/01.png" alt="카드등록"></i>
+                                </a>
+                                <a class="main-menu__anchor" href="./sub_01.html">
+                                    <span>멤버십<br>라운지</span>
+                                    <i class="main-icon"><img src="images/icons/02.png" alt="멤버십"></i>
+                                </a>
+                                <a class="main-menu__anchor" href="./sub_02.html">
+                                    <span>적립/할인<br>브랜드</span>
+                                    <i class="main-icon"><img src="images/icons/09.png" alt="브랜드"></i>
+                                </a>
+                                <a class="main-menu__anchor" href="#" onclick="ready_test()">
+                                    <span>매장<br>찾기</span>
+                                    <i class="main-icon"><img src="images/icons/08.png" alt="매장찾기"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!--    메인내용     -->
     <main id="main" class="clearfix">
         <div class="wrap">
@@ -124,11 +163,11 @@
                     <img src="./images/main_1.png" alt="메인이미지01">
                 </div>
                 <div class="m1_txt">
-                    <h2>HAPPYPOINT<br>Benefit</h2>
-                    <p>모으는 재미, 쓰는 기쁨을 선사합니다.</p>
-                    <p>해피포인트 고객만의 특별한 혜택과,<br>
-                    다양한 제휴사를 확인해 보세요</p>
-                    <button>CHECK</button>
+                    <h2><em>HAPPY POINT</em><br>Alliance</h2>
+                    <p>모으는 재미, 쓰는 기쁨을 선사합니다.<br>
+                        해피포인트 고객만의 특별한 혜택과,<br>
+                        다양한 제휴사를 확인해 보세요</p>
+                    <button><a href="./sub_02.html">CHECK</a></button>
                 </div>
             </div>
         </div>
@@ -143,7 +182,7 @@
                                         <img src="./images/icons/akmall.png" alt="ak아이콘">
                                     </div>
                                     <div class="icon_fig_cap">
-                                        <p>제휴 쇼핑몰을 방문구매시<br>추가해피포인트를 적립받으세요.</p>
+                                        <p>제휴 쇼핑몰을 구매시<br>추가포인트를 적립받으세요.</p>
                                     </div>
                                 </div>
                             </div>
@@ -178,45 +217,88 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="banner">
-                            <div class="slideList">
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_01.jpg" alt="배너이미지01"></a>
-                                </div>
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_02.jpg" alt="배너이미지02"></a>
-                                </div>
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_03.jpg" alt="배너이미지03"></a>
-                                </div>
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_04.jpg" alt="배너이미지04"></a>
-                                </div>
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_05.jpg" alt="배너이미지05"></a>
-                                </div>
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_06.jpg" alt="배너이미지01"></a>
-                                </div>
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_07.jpg" alt="배너이미지01"></a>
-                                </div>
-                                <div class="slideimg">
-                                    <a href="#"><img src="./images/bannerimg/banner_08.jpg" alt="배너이미지01"></a>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m_04">
+            <div class="wrap">
+                <h1>Brand Franchise</h1>
+                <p>
+                    해피포인트는 베이커리, 카페 뿐만 아니라 다양한 외식브랜드에서도 적립 할 수 있습니다.
+                </p>
+                <div class="brand">
+                    <div class="b_img">
+                        <img data-aos="fade-up" data-aos-duration="1800" src="./images/m3_02.png" alt="왼쪽폰">
+                        <img data-aos="fade-down" data-aos-duration="2000" src="./images/m3_01.png" alt="오른쪽폰">
                     </div>
                 </div>
             </div>
         </div>
         <div class="m_03">
-            <div class="wrap">
-                <h1>Brand<br>Franchise</h1>
-                <div class="brand">
-                    <img src="./images/m3_01.png" alt="왼쪽폰">
-                    <img src="./images/m3_02.png" alt="오른쪽폰">
+            <div class="slideList">
+                <div class="slideimg">
+                    <a href="#"><img src="./images/bannerimg/banner_02_1.jpg" alt="배너이미지02"></a>
                 </div>
+                <div class="slideimg">
+                    <a href="#"><img src="./images/bannerimg/banner_03_1.jpg" alt="배너이미지03"></a>
+                </div>
+                <div class="slideimg">
+                    <a href="#"><img src="./images/bannerimg/banner_04_1.jpg" alt="배너이미지04"></a>
+                </div>
+                <div class="slideimg">
+                    <a href="#"><img src="./images/bannerimg/banner_05_1.jpg" alt="배너이미지05"></a>
+                </div>
+                <div class="slideimg">
+                    <a href="#"><img src="./images/bannerimg/banner_06_1.jpg" alt="배너이미지01"></a>
+                </div>
+                <div class="slideimg">
+                    <a href="#"><img src="./images/bannerimg/banner_07_1.jpg" alt="배너이미지01"></a>
+                </div>
+                <div class="slideimg">
+                    <a href="#"><img src="./images/bannerimg/banner_08_1.jpg" alt="배너이미지01"></a>
+                </div>
+            </div>
+        </div>
+        <div class="m_05">
+            <div class="wrap">
+                <div class="tit">
+                    <h2><em>HAPPY POINT</em> Benefit</h2>
+                </div>
+                <ul class="item-box">
+                    <li>
+                        <img src="./images/test_img/test1.png" alt="">
+                        <h4>해피데이</h4>
+                        <p>
+                            해피포인트 브랜드와 제휴사의<br>
+                            다양한 이벤트/혜택을 한눈에!<br>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/test_img/test2.png" alt="">
+                        <h4>해피마켓</h4>
+                        <p>
+                            해피콘,배송,픽업,배달서비스를<br>
+                            다양하게 누려보세요!
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/test_img/test3.png" alt="">
+                        <h4>해피스탬프</h4>
+                        <p>
+                            모을수록 더 큰혜택이?<br>
+                            스탬프 적립으로 한번더 혜택을!<br>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="./images/test_img/test4.png" alt="">
+                        <h4>이벤트/혜택</h4>
+                        <p>
+                            매장,모바일,문화등 할인혜택과<br>
+                            이벤트를 확인해보세요!<br>
+                        </p>
+                    </li>
+                </ul>
             </div>
         </div>
     </main>
@@ -225,56 +307,80 @@
         <div class="wrap">
             <div class="f_inner">
                 <div class="f_text">
-                    <div class="f_menu">
-                        <a href="#">개인정보 처리방침</a>
-                        <a href="#">회원이용약관</a>
-                        <a href="#">위치기반서비스</a>
-                        <a href="#">거래희망회사 </a>
-                        <a href="#">사전등록윤리신고센터</a>
-                        <a href="#">이메일 무단수집거부</a>
-                    </div>
-                    <div class="f_info">
-                        <ul class="copy">
-                            <li>주식회사 에스피씨클라우드</li>
-                            <li>사업자 등록번호: 264-81-21971</li>
-                            <li>서울특별시 서초구 남부순환로 2620 (양재동 11-149) 에스피씨클라우드</li>
-                            <li>COPYRIGHT ⓒ SPC CLOUD. LTD ALL RIGHTS RESERVED.</li>
-                        </ul>
-                        <ul class="copy_1">
-                            <li>해피포인트 고객센터: 080-320-1234 </li>
-                            <li>평일(월~금) 오전9시~오후7 </li>
-                            <li>토,일,공휴일 휴무</li>
-                        </ul>
-                        <div class="f_site">
-                            <form action="">
-                                <select name="" id="">
-                                    <option value="00">패밀리사이트</option>
-                                    <option value="http://www.spc.co.kr/">SPC</option>
-                                    <option value="http://www.pariscroissant.co.kr/">파리크라상</option>
-                                    <option value="http://www.paris.co.kr/main/">파리바게뜨</option>
-                                    <option value="http://www.caffe-pascucci.co.kr/">파스쿠찌</option>
-                                    <option value="http://www.jambajuice.co.kr/web/main.asp">잠바주스</option>
-                                    <option value="https://www.dqueenscatering.com/">디퀸즈케이터링</option>
-                                    <option value="http://www.baskinrobbins.co.kr/">배스킨라빈스</option>
-                                    <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
-                                    <option value="http://www.bizeun.co.kr/">빚은</option>
-                                    <option value="http://dining.spc.co.kr/index.do">SPC 외식브랜드</option>
-                                    <option value="http://www.breadmall.co.kr/">브래드몰</option>
-                                </select>
-                                <img src="./images/f_logo.png" alt="하단로고">
-                            </form>
+                    <div class="f_left">
+                        <div class="f_menu">
+                            <a href="#">개인정보 처리방침</a>
+                            <a href="#">회원이용약관</a>
+                            <a href="#">위치기반서비스</a>
+                            <a href="#">거래희망회사 </a>
+                            <a href="#">사전등록윤리신고센터</a>
+                            <a href="#">이메일 무단수집거부</a>
+                        </div>
+                        <div class="f_info">
+                            <ul class="copy">
+                                <li>주식회사 에스피씨클라우드</li>
+                                <li>사업자 등록번호: 264-81-21971</li>
+                                <li>서울특별시 서초구 남부순환로 2620 (양재동 11-149) 에스피씨클라우드</li>
+                                <li>COPYRIGHT ⓒ SPC CLOUD. LTD ALL RIGHTS RESERVED.</li>
+                            </ul>
+                            <ul class="copy_1">
+                                <li>해피포인트 고객센터: 080-320-1234 </li>
+                                <li>평일(월~금) 오전9시~오후7 </li>
+                                <li>토,일,공휴일 휴무</li>
+                                <li>
+                                    <div class="f_site">
+                                        <form action="">
+                                            <select name="" id="">
+                                                <option value="00">패밀리사이트</option>
+                                                <option value="http://www.spc.co.kr/">SPC</option>
+                                                <option value="http://www.pariscroissant.co.kr/">파리크라상</option>
+                                                <option value="http://www.paris.co.kr/main/">파리바게뜨</option>
+                                                <option value="http://www.caffe-pascucci.co.kr/">파스쿠찌</option>
+                                                <option value="http://www.jambajuice.co.kr/web/main.asp">잠바주스</option>
+                                                <option value="https://www.dqueenscatering.com/">디퀸즈케이터링</option>
+                                                <option value="http://www.baskinrobbins.co.kr/">배스킨라빈스</option>
+                                                <option value="http://www.dunkindonuts.co.kr/">던킨도너츠</option>
+                                                <option value="http://www.bizeun.co.kr/">빚은</option>
+                                                <option value="http://dining.spc.co.kr/index.do">SPC 외식브랜드</option>
+                                                <option value="http://www.breadmall.co.kr/">브래드몰</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                            <img src="./images/f_logo.png" alt="하단로고">
                         </div>
                     </div>
                 </div>
-                
             </div>
         </div>
     </footer>
 
     <!--  script  -->
     <script src="./script/jquery-1.12.4.js"></script>
-    <script src="./script/index.js"></script>
+    <!--  Slick banner  -->
+    <script src="./script/slick.js"></script>
+    <!--  고정 SCRIPT  -->
+    <script src="./script/fixation.js"></script>
+    <!--  font-Awesome  -->
     <script src="./script/all.js"></script>
+    <!--  Scroll js  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS 초기화
+
+        AOS.init();
+
+        // Sub_01 MEMBERSHIP 슬릭배너
+        $('.slideList').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+        });
+
+    </script>
 </body>
 
 </html>

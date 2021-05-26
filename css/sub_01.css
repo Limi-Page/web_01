@@ -149,10 +149,16 @@
 }
 
 
+/*반응형일때, 여백*/
+.padding_box {
+    padding: 0 1.2rem;
+}
+
+
+
 /*        membership     */
 
-
-.mainPlayer {
+.Mevership {
     position: relative;
     margin: 10% auto;
     max-width: 1400px;
@@ -164,7 +170,7 @@
     max-width: 1400px;
 }
 
-.mainPlayer .innerBox:before {
+.Mevership .innerBox:before {
     content: '';
     display: block;
     position: absolute;
@@ -178,7 +184,7 @@
     animation: cycleM 5s linear infinite alternate both;
 }
 
-.mainPlayer .mainWrap:before {
+.Mevership .Ms_Wrap:before {
     content: '';
     display: block;
     position: absolute;
@@ -190,20 +196,20 @@
     transform: rotate(30deg);
 }
 
-.mainPlayer .slickWrap {
+.Mevership .slickWrap {
     position: relative;
     margin-top: 70px;
 }
 
-.mainPlayer .slickInfo {}
+.Mevership .slickInfo {}
 
-.mainPlayer .slickInfo h1 {
+.Mevership .slickInfo h1 {
     font-weight: 800;;
     font-size: 4rem;
     color: #c5819a
 }
 
-.mainPlayer .slickInfo .text {
+.Mevership .slickInfo .text {
     margin-top: 1%;
     font-size: 1rem;
     font-weight: 300;
@@ -212,13 +218,12 @@
     font-family: "NanumBarunGothic";
 }
 
-.mainPlayer .slick-list {
+.Mevership .slick-list {
     margin-top: 2%
 }
 
-.mainPlayer .slick_m {
+.Mevership .slick_m {
     box-sizing: border-box;
-    margin: 0 15px;
     opacity: 1;
     transition: all .3s ease;
     cursor: pointer;
@@ -227,34 +232,34 @@
     height: 100%;
 }
 
-.mainPlayer .slickBox {
+.Mevership .slickBox {
     position: relative;
     left: 12%;
 }
 
-.mainPlayer .slickBox .img {
+.Mevership .slickBox .img {
     width: 100%;
     height: 100%;
     transition: all 0.5s;
     transform: scale(1);
 }
 
-.mainPlayer .slickBox .img:hover {
+.Mevership .slickBox .img:hover {
     transform: scale(0.9);
 }
 
-.mainPlayer .slickBox .img img {
+.Mevership .slickBox .img img {
     width: 100%;
 }
 
-.mainPlayer .slickBox .title {
+.Mevership .slickBox .title {
     margin-left: 15px;
     margin-top: 30px;
     font-size: 24px;
     font-weight: bold;
 }
 
-.mainPlayer .slickBox .text {
+.Mevership .slickBox .text {
     margin-left: 15px;
     margin-top: 15px;
     font-size: 0.9rem;
@@ -274,7 +279,7 @@
     width: 52px;
     height: 52px;
     background: url("../images/icons/btn_arrow_off.png") no-repeat;
-    background-size: 52px 52px;
+    background-size: cover;
     transition: all .3s ease;
 }
 
@@ -328,12 +333,12 @@
     margin: 0 auto;
 }
 
-.appKitPlayer {
+.Memvership_List {
     position: relative;
     margin-top: 70px;
 }
 
-.appKitPlayer h2 {
+.Memvership_List h2 {
     position: relative;
     z-index: 1;
     padding-top: 50px;
@@ -344,7 +349,7 @@
     ;
 }
 
-.appKitPlayer span {
+.Memvership_List span {
     position: relative;
     z-index: 1;
     display: block;
@@ -352,12 +357,11 @@
     font-weight: bold;
     color: #7f7f7f;
     line-height: 1.6;
-    font-family: "NanumBarunGothic";
     left: 5px;
 
 }
 
-.appKitPlayer .text {
+.Memvership_List .text {
     position: relative;
     left: 5px;
     z-index: 1;
@@ -369,65 +373,82 @@
 }
 
 
-.appKitPlayer .btnAppDown {
+.Memvership_List .btnAppDown {
     margin: 40px 0 230px;
 }
 
-.appKitPlayer .btnPlay {
+.Memvership_List .btnPlay {
     display: inline-block;
     width: 220px;
     height: 60px;
     font-size: 0;
-    background: url('http://kihno.com/assets/images/player/btn_play.png') no-repeat;
+    background: url('../images/icons/googleplay.png') no-repeat;
 }
 
-.appKitPlayer .btnStore {
+.Memvership_List .btnStore {
     display: inline-block;
     width: 220px;
     height: 60px;
     margin-left: 0.5%;
     font-size: 0;
-    background: url('http://kihno.com/assets/images/player/btn_store.png') no-repeat;
+    background: url('../images/icons/appstore.png') no-repeat;
 }
-
-.appKitPlayer .img1 {
+.Memvership_List img {
+    width: 250px;
+    filter: drop-shadow(13px 21px 13px #000);
+}
+.Memvership_List .img1 {
     position: absolute;
     top: 0;
     right: 50px;
 }
 
-.appKitPlayer .img2 {
+.Memvership_List .img2 {
     position: absolute;
     top: 140px;
     right: 400px;
+    
 }
 
 
 /*        해피포인트앱 설명        */
 
-.appInfoText {
+.AppInfo {
     padding: 50px 0;
     background: #f8f8f8;
 }
+.AppInfo .AppInfo_header img{
+    width: 39px; 
+    vertical-align: top;
+    animation: rotate_image 3s linear infinite;
+    transform-origin: 50% 50%;
+}
 
-.appInfoText h2 {
-    padding-left: 45px;
-    line-height: 45px;
+/*애니메이션*/
+
+@keyframes rotate_image {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.AppInfo .AppInfo_header h2 {
+    display: inline-block;
+    line-height: 41px;
     font-weight: bold;
     font-size: 1.8rem;
     color: #111;
-    background: url(../images/icons/05.png) no-repeat 0 center;
-    background-size: 38px;
+    margin-left: 0.5rem
 }
 
-.appInfoText .box {
+.AppInfo .box {
     overflow: hidden;
     position: relative;
     margin-top: 35px;
-    padding: 50px;
+    padding: 0 4rem ;
 }
 
-.appInfoText .box:before {
+.AppInfo .box:before {
     content: '';
     display: block;
     position: absolute;
@@ -440,49 +461,69 @@
     box-sizing: border-box;
 }
 
-.appInfoText .box:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: -100px;
-    right: -100px;
-    width: 200px;
-    height: 200px;
-    border-left: 1px solid #e3e3e3;
-    background: #f8f8f8;
-    transform: rotate(-45deg);
+
+.AppInfo .box_all {
+    margin: auto;
+    max-width: 820px;
+    margin-top: 3.5rem
 }
 
-.appInfoText .box h3 {
+.AppInfo .box_center {
+    display: flex;
+    border-bottom: 1px dotted #bcbcbc;
+    flex-wrap: wrap;
+}
+.AppInfo .box_05 .box_center{
+    border:none;
+}
+/*앱 이용 이미지*/
+.AppInfo .box_img{
+    margin-right: 4rem;
+    
+}
+
+.AppInfo .box_img img{
+   text-align: center;
+}
+
+
+
+/*앱 이용 텍스트*/
+
+.AppInfo .box_txt {
+    box-sizing: border-box;
+    padding: 34px 0;
+}
+
+
+.AppInfo .box_txt h3 {
     font-size: 1.2rem;
     color: #111;
     font-weight: bold;
-    padding-left: 30%;
-    margin-bottom: 0.5rem;
 }
 
-.appInfoText .box h3 em {
+.AppInfo .box_txt h3 em {
     color: #c5819a;
     font-style: normal;
 }
 
-.appInfoText .box ul {
-    padding-left: 30%;
+.AppInfo .box_txt ul {
 }
 
-.appInfoText .box li {
+.AppInfo .box_txt li {
     position: relative;
     margin-top: 5px;
     padding-left: 12px;
     font-size: 1rem;
-    font-family: 'NanumBarunGothic'
+    font-family: 'NanumBarunGothic';
+    
 }
 
-.appInfoText .box li span {
+.AppInfo .box_txt li span {
     color: #999;
 }
 
-.appInfoText .box li:before {
+.AppInfo .box li:before {
     content: '';
     display: block;
     position: absolute;
@@ -491,12 +532,5 @@
     width: 5px;
     height: 1px;
     background: #111;
-}
-
-.appInfoText .box .box_02,
-.appInfoText .box .box_03,
-.appInfoText .box .box_04, 
-.appInfoText .box .box_05 {
-    margin-top: 2.3rem
 }
 

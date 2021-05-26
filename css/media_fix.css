@@ -1,0 +1,43 @@
+    /*반응형 포인트잡기*/
+
+
+    @media screen and (max-width: 1024px){
+        #header h1 a img{margin-left: 1rem;}
+        #footer .f_inner{    max-width: 900px;}
+}
+       
+    
+    @media screen and (max-width: 768px){
+        #header .nav ul.menu li {padding-right: 4%;}
+        #header .nav ul.menu li a{font-size: 1.1rem;}
+        #footer .f_menu a{padding-left: 1%;}
+        #footer img {display: none;}
+    }
+
+
+    @media screen and (max-width: 425px){
+        #header{background-color:rgba(0,0,0,0.8)}
+        #header .mini_menu{display: none;}
+        #header .nav ul.menu li:not(.li_button){display: none;}
+        #header h1 a img{    margin-top: 19px; width: 75%;margin-left: 0;}
+        #header button a svg {font-size: 32px;margin-top: 4px;}
+        #footer * {font-size: 0.7rem;}
+        #footer li:first-child{font-size: 0.8rem;}
+        #footer .copy_1{ display: none;}
+        #footer .f_menu {display: none;}
+/*        .icon_fig_cap p {font-size: 13px;}*/
+}
+
+
+    @media screen and (max-width: 375px){
+        #footer *{    font-size: 0.6rem;}
+        #footer li:first-child{font-size: 0.7rem;}
+}
+
+
+
+    @media screen and (max-width: 320px){
+        #header h1 a img{    width: 65%;}
+        #header button a svg{    font-size: 30px;}
+        #footer img{     display: block; max-width: 100px;max-height: 100px;margin: auto}
+}

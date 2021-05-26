@@ -26,10 +26,8 @@
 
 .p_sticky {
     position: sticky;
-    top: 0;
-    z-index: 2;
-    background: #fff;
-    display: none;
+    top: 280px;
+    z-index: 99;
 }
 
 /*서브타이틀 SYTLE*/
@@ -38,6 +36,10 @@
     background: url(../images/sub_tit_03.png) no-repeat;
     background-size: cover;
     background-position: center center;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 
 .Sub_wrap {
@@ -110,7 +112,7 @@
 
 /* welfare Nav*/
 
- .wf_wrap {
+.wf_wrap {
     width: 100%;
     height: 100%;
     max-width: 1280px;
@@ -133,14 +135,23 @@
     margin: auto;
     width: 100%;
     overflow: hidden;
+    border: 1px solid #fff;
 
 }
 
 .contents .wf_nav li {
     background: #fff;
     width: 25%;
-    border-bottom: 1px solid #d8d8d8;
+    border: 1px solid #d8d8d8;
+    /*    border-top: 1px solid #d8d8d8;*/
     font-size: 1.04rem;
+    box-sizing: border-box;
+}
+
+.contents .wf_nav li:nth-child(2),
+.contents .wf_nav li:nth-child(3),
+.contents .wf_nav li:nth-child(4) {
+    border-left: none;
 }
 
 .contents .wf_nav li:hover {
@@ -212,7 +223,7 @@ main #tab_1 h2 {
 @keyframes high {
     0% {
         letter-spacing: -1rem;
-        transform: translateY(-500px);
+        transform: translateY(-70px);
         opacity: 0;
     }
 
@@ -230,7 +241,6 @@ main #tab_1 h2 {
     text-align: center;
     font-family: 'NanumBarunGothic';
     color: #686868;
-    margin-bottom: 2rem;
 }
 
 .detail {
@@ -245,7 +255,7 @@ main #tab_1 h2 {
     font-size: 1.1rem;
     font-weight: bold;
     color: #c5819a;
-    
+
 }
 
 .detail dd {
@@ -253,9 +263,10 @@ main #tab_1 h2 {
     font-family: 'NanumBarunGothic';
     color: #7f7f7f;
     float: left;
-    
+
 }
-.detail dd:nth-child(3){
+
+.detail dd:nth-child(3) {
     float: right;
     padding-top: 10px;
 }
@@ -263,7 +274,7 @@ main #tab_1 h2 {
 .detail dd a.dd_button {
     padding: 1rem;
     border: 1px solid #c5819a;
-    
+
 }
 
 
@@ -272,10 +283,10 @@ main #tab_1 h2 {
 
 .table_title {
     margin-top: 2rem;
-    font-size: 1.3rem;
-/*    color: #555;*/
-    color: #c5819a;
+    font-size: 1.8rem;
+    color: #686868;
     text-align: center;
+    font-weight: 800;
 }
 
 .board.list_table table {
@@ -303,7 +314,7 @@ tbody td.num {
     font-size: 16px;
     line-height: 3;
     text-align: center;
-     border-bottom: 1px solid #d9d9d9;
+    border-bottom: 1px solid #d9d9d9;
 }
 
 .board.list_table table tr > *,
@@ -326,43 +337,215 @@ tbody td.num {
     font-size: .99em !important;
 }
 
+.board.list_table table button {
+    padding: 0.3rem 1rem;
+    border: 1px solid #c5819a;
+}
+
+.board.list_table table button span {
+    color: #c5819a;
+}
+
 .last_text {
     text-align: center;
     font-family: 'NanumBarunGothic';
+    color: #999;
+    font-size: 14px;
 }
-
-
 
 
 /*    기부활동    */
-
-.chapter_title {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
+.C_all {
+    padding: 3rem 0;
 }
 
-#tab_2 .w_act *{
+.C_all * {
+    text-align: center;
+}
+
+
+.chapter_title {
+    margin-bottom: 1.8rem;
+    font-size: 1.5rem;
+    color: #686868;
+}
+
+
+#tab_2 .w_act * {
     font-family: 'NanumBarunGothic';
 }
 
-
-.chapter_1 {
-  text-align: right;
-    
+.chapter_1,
+.chapter_2 {
+    display: flex;
 }
 
+.chapter_1 .chapter_title,
+.chapter_2 .chapter_title {
+    margin-bottom: 1rem;
+}
 
-.chapter_3 * {
-    text-align: center;
+.ch_wrap1 dl *,
+.ch_wrap2 dl * {
+    color: #999;
+    font-size: 15px;
+    line-height: 1.5;
+
+}
+
+.chapter_1 {
+    padding-bottom: 0;
+}
+
+.chapter_2 {
+    padding-top: 0;
+    justify-content: flex-end
+}
+
+.ch_wrap1 {
+    padding: 4rem;
+    padding-right: 1rem;
+}
+
+.ch_wrap1 span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.ch_wrap2 {
+    padding: 5rem;
+    padding-left: 1rem;
+
+}
+
+.ch_wrap1 * {
+    text-align: left;
+
+}
+
+.ch_wrap2 * {
+    text-align: right;
+}
+
+.chapter_3 {
+    background: #f6f6f6;
 }
 
 .chapter_3 .Nutrition {
     display: flex;
+    justify-content: space-between;
     flex-flow: nowrap;
+    max-width: 950px;
+    width: 100%;
+    margin: auto
 }
-.chapter_3 .Nutrition dl {
-    
+
+
+.chapter_3 .Nutrition dt {
+    font-weight: 800;
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #686868;
 }
+
+.chapter_3 .Nutrition dd {
+    font-size: 13px;
+    color: #7f7f7f;
+}
+
+.chapter_4 {
+    padding: 6rem 0;
+}
+
+.chapter_4 ul {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.chapter_4 li {
+    color: #7f7f7f;
+    padding-top: 0.7rem;
+}
+
+.chapter_4 li span {
+    color: #c5819a;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.chapter_5 {
+    background: #fbf5f7;
+}
+
+
+.chapter_5 .cf {
+    display: flex;
+    justify-content: space-around;
+    max-width: 750px;
+    margin: auto;
+}
+
+.chapter_5 .chapter_title {
+    color: #c5819a;
+}
+
+.chapter_5 dl {
+    width: 100%;
+    max-width: 270px;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 25px 25px 0 25px;
+    box-shadow: 0px 0px 8px #ddd;
+}
+
+.chapter_5 dt {
+    color: #686868;
+    font-family: "NanumSquare" !important;
+    font-size: 1.1rem;
+    font-weight: 800;
+    margin-top: 0.5rem;
+}
+
+.chapter_5 dd:last-child {
+    padding: 0.5rem 0;
+    font-size: 13px;
+    color: #7f7f7f;
+    line-height: 1.5
+}
+
+
+
+.chapter_6 {
+    background: url(../images/sub_04/bg.jpg) no-repeat center fixed;
+    background-size: cover;
+    height: 300px;
+    padding: 2rem 0;
+}
+
+.chapter_6 .blind {
+    color: #fff;
+    position: relative;
+    margin: auto;
+    top: 18%;
+
+}
+
+.chapter_6 h5 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+
+}
+
+.chapter_6 p {
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
 
 /*        나눔 당첨자        */
 
@@ -438,7 +621,7 @@ tbody td.num {
 
 .wf_04_inner .sec_01 img {
     width: 100%;
-    max-width: 950px;
+    max-width: 780px;
 }
 
 .wf_04_inner .sec_02 {
@@ -448,11 +631,11 @@ tbody td.num {
 
 .sec_02 button {
     background: #edd7df;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1.2rem;
 }
 
 .sec_02 button a {
     color: #c5819a;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }

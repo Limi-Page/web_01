@@ -6,7 +6,6 @@
 /*상단*/
 @import url(./fix/header.css);
 
-
 .container {
     width: 100%;
     max-width: 1280px;
@@ -134,8 +133,9 @@
     color: #555;
     font-weight: bold;
 }
+
 .contents .alli_nav li.on {
-   background: #fbfbfb;
+    background: #fbfbfb;
     border-bottom: 1px solid #aaa;
     font-weight: bold;
     font-size: 1.04rem;
@@ -183,11 +183,11 @@
     box-sizing: border-box;
     padding-bottom: 1.5rem;
     display: none;
+    animation: fadein 2s;
 }
 
-.alli_list .alli_List_view > li.on {
+.alli_list .alli_List_view > li.on{
     display: block;
-    animation: fadein 2s;
 }
 
 @keyframes fadein {
@@ -249,10 +249,10 @@
     cursor: pointer;
 }
 
-.alli_list .more::after {
+.alli_list .more i{ 
     position: absolute;
     content: "";
-    top: 40%;
+    top: 50%;
     right: 2px;
     width: 12px;
     height: 12px;
@@ -262,20 +262,14 @@
     transform: translateY(-50%) rotate(180deg);
 }
 
-/*
-.alli_list .more::after{
+.alli_list .more i.on{
     transform: translateY(-50%) rotate(0deg);
 }
-*/
 
 .alli_info_text {
     text-align: left;
     margin-top: 1rem;
     display: none;
-}
-
-.alli_info_text.on {
-    display: block;
 }
 
 .alli_info_text li {
@@ -285,3 +279,8 @@
     width: 100%;
     font-family: "NanumBarunGothic", sans-serif;
 }
+
+
+
+
+
